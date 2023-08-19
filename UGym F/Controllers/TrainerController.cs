@@ -29,5 +29,29 @@ namespace UGym_F.Controllers
             return View();
         }
 
+        public ActionResult Evaluations()
+        {
+            return View();
+        }
+
+        public ActionResult Drafts()
+        {
+            return View();
+        }
+
+        public ActionResult Gestion()
+        {
+            return View();
+        }
+
+        public ActionResult Classes()
+        {
+            return View();
+        }
+
+        public ActionResult ModifyClass()
+        {
+               return View();
+        }
     }
 }

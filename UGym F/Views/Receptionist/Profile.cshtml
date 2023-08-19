@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Profile";
-    Layout = "~/Views/Shared/_Trainer_layout.cshtml";
+    Layout = "~/Views/Shared/_Receptionist_layout.cshtml";
 }
 
 
@@ -21,31 +21,31 @@
                             <p>La información se ha actualizado correctamente.</p>
                         </div>
                         <div class="input-field">
-                            <input id="cedula" type="text" class="validate" value="111445798">
+                            <input id="cedula" type="text" class="validate" value="112663366">
                             <label for="cedula">Cédula</label>
                         </div>
                         <div class="input-field">
-                            <input id="nombre" type="text" class="validate" value="Pedro Simon">
+                            <input id="nombre" type="text" class="validate" value="Rebeca R">
                             <label for="nombre">Nombre Completo</label>
                         </div>
                         <div class="input-field">
-                            <input id="fechaNacimiento" type="text" class="datepicker" value="02/12/1980">
+                            <input id="fechaNacimiento" type="text" class="datepicker" value="01/19/1990">
                             <label for="fechaNacimiento">Fecha de Nacimiento</label>
                         </div>
                         <div class="input-field">
                             <select>
-                                <option value="" disabled selected>Masculino</option>
+                                <option value="" disabled selected>femenino</option>
                                 <option value="masculino">Masculino</option>
                                 <option value="femenino">Femenino</option>
                             </select>
                             <label>Género</label>
                         </div>
                         <div class="input-field">
-                            <input id="ocupacion" type="text" class="validate" value="Entenador">
+                            <input id="ocupacion" type="text" class="validate" value="Recepcionista">
                             <label for="ocupacion">Puesto</label>
                         </div>
                         <div class="input-field">
-                            <input id="correo" type="email" class="validate" value="Entrenador@noemail.com">
+                            <input id="correo" type="email" class="validate" value="recepcionista@noemail.com">
                             <label for="correo">Correo Electrónico</label>
                         </div>
                         <div class="input-field">
@@ -53,28 +53,27 @@
                             <label for="direccion">Dirección</label>
                         </div>
                         <div class="input-field">
-                            <input id="telefono" type="tel" class="validate" value="99884455">
+                            <input id="telefono" type="tel" class="validate" value="98798765">
                             <label for="telefono">Número Telefónico</label>
                         </div>
                         <div class="input-field">
-                            <input id="contactoEmergencia" type="text" class="validate" value="Pepe">
+                            <input id="contactoEmergencia" type="text" class="validate" value="Popo">
                             <label for="contactoEmergencia">Nombre de Contacto de Emergencia</label>
                         </div>
                         <div class="input-field">
-                            <input id="telefonoEmergencia" type="tel" class="validate" value="99887744">
+                            <input id="telefonoEmergencia" type="tel" class="validate" value="365412365">
                             <label for="telefonoEmergencia">Número de Contacto de Emergencia</label>
                         </div>
                         <button class="btn waves-effect waves-light" type="button" name="action" id="guardarBtn">Guardar</button>
                     </form>
                     <br />
-                    @Html.ActionLink("Cancelar", "Index", "Trainer", new { area = "" }, new { @class = "btn waves-effect waves-light" })
-                    @Html.ActionLink("Regresar", "Index", "Trainer", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                    @Html.ActionLink("Cancelar", "Index", "Receptionist", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                    @Html.ActionLink("Regresar", "Index", "Receptionist", new { area = "" }, new { @class = "btn waves-effect waves-light" })
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

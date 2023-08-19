@@ -14,6 +14,13 @@
                 <div class="card-content">
                     <span class="card-title" Infromación Personal></span>
                     <form>
+                        <!-- Mensaje de información actualizada -->
+
+                            <div class="info-message" style="display: none;">
+                                <h4>Información Actualizada</h4>
+                                <p>La información se ha actualizado correctamente.</p>
+                            </div>
+
                         <div class="input-field">
                             <input id="cedula" type="text" class="validate" value="111557845">
                             <label for="cedula">Cédula</label>
@@ -79,7 +86,6 @@
                             <label for="fechaExpiracion">Fecha de Expiración</label>
                         </div>
                         <button class="btn waves-effect waves-light" type="button" name="action" id="guardarBtn">Guardar</button>
-
                     </form>
                     <br />
                     @Html.ActionLink("Cancelar", "Index", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
@@ -91,13 +97,6 @@
     </div>
 </div>
 
-<!-- Modal -->
-<div id="modal1" class="modal modal-fixed-footer" style="max-width: 15%; max-height: 15%; padding: 0px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-
-        <h4>Información Actualizada</h4>
-        <p>La información se ha actualizado correctamente.</p>
-
-</div>
 
 
 <!-- Scripts -->
@@ -105,28 +104,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.modal');
-        var instances = M.Modal.init(elems);
-
         var guardarBtn = document.getElementById('guardarBtn');
+        var infoMessage = document.querySelector('.info-message');
+
         guardarBtn.addEventListener('click', function () {
-            var modalInstance = M.Modal.getInstance(document.getElementById('modal1'));
-            modalInstance.open();
+            infoMessage.style.display = 'block';
+        });
+
+        // Inicializar elementos de Materialize (asegúrate de tener los scripts cargados)
+        var selectElems = document.querySelectorAll('select');
+        var datepickers = document.querySelectorAll('.datepicker');
+
+        M.FormSelect.init(selectElems);
+        M.Datepicker.init(datepickers, {
+            format: 'dd/mm/yyyy'
         });
     });
 </script>
-<script>
-    // Inicializar elementos de Materialize (asegúrate de tener los scripts cargados)
-    document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('select');
-        var instances = M.FormSelect.init(elems);
-
-        var datepickers = document.querySelectorAll('.datepicker');
-        var options = {
-            format: 'dd/mm/yyyy'
-        };
-        M.Datepicker.init(datepickers, options);
-    });
-</script>
-
 

@@ -16,12 +16,15 @@ C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\Microsoft.CodeAnalysis.Visu
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\Microsoft.Managed.Core.targets
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Buffers.dll
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Memory.dll
+C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Numerics.Vectors.dll
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Text.Encoding.CodePages.dll
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Threading.Tasks.Extensions.dll
 C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\vbc.exe
@@ -45,6 +48,8 @@ C:\Users\joses\source\repos\UGym F\UGym F\bin\System.Web.WebPages.Razor.dll
 C:\Users\joses\source\repos\UGym F\UGym F\bin\WebGrease.dll
 C:\Users\joses\source\repos\UGym F\UGym F\bin\EntityFramework.xml
 C:\Users\joses\source\repos\UGym F\UGym F\bin\EntityFramework.SqlServer.xml
+C:\Users\joses\source\repos\UGym F\UGym F\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joses\source\repos\UGym F\UGym F\bin\Newtonsoft.Json.xml
 C:\Users\joses\source\repos\UGym F\UGym F\bin\System.Web.Helpers.xml
 C:\Users\joses\source\repos\UGym F\UGym F\bin\System.Web.Mvc.xml
 C:\Users\joses\source\repos\UGym F\UGym F\bin\System.Web.Optimization.xml
@@ -52,16 +57,9 @@ C:\Users\joses\source\repos\UGym F\UGym F\bin\System.Web.Razor.xml
 C:\Users\joses\source\repos\UGym F\UGym F\bin\System.Web.WebPages.xml
 C:\Users\joses\source\repos\UGym F\UGym F\bin\System.Web.WebPages.Deployment.xml
 C:\Users\joses\source\repos\UGym F\UGym F\bin\System.Web.WebPages.Razor.xml
-C:\Users\joses\source\repos\UGym F\UGym F\bin\Newtonsoft.Json.xml
 C:\Users\joses\source\repos\UGym F\UGym F\bin\Antlr3.Runtime.pdb
-C:\Users\joses\source\repos\UGym F\UGym F\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\joses\source\repos\UGym F\UGym F\obj\Debug\UGym F.csproj.AssemblyReference.cache
 C:\Users\joses\source\repos\UGym F\UGym F\obj\Debug\UGym F.csproj.CoreCompileInputs.cache
 C:\Users\joses\source\repos\UGym F\UGym F\obj\Debug\UGym F.csproj.CopyComplete
 C:\Users\joses\source\repos\UGym F\UGym F\obj\Debug\UGym F.dll
 C:\Users\joses\source\repos\UGym F\UGym F\obj\Debug\UGym F.pdb
-C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
-C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Buffers.dll
-C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Memory.dll
-C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Numerics.Vectors.dll
-C:\Users\joses\source\repos\UGym F\UGym F\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll

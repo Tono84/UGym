@@ -91,12 +91,12 @@
     <!-- Menú lateral -->
     <ul id="slide-out" class="sidenav sidenav-fixed">
         <li><a href="#"><i class="material-icons">account_circle</i>@Html.ActionLink("Perfil", "Profile", "Cliente", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
-        <li><a href="#"><i class="material-icons">fitness_center</i>@Html.ActionLink("Rutinas", "Index", "Home", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
-        <li><a href="#"><i class="material-icons">accessibility_new</i>@Html.ActionLink("Inbody", "Index", "Home", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
-        <li><a href="#"><i class="material-icons">restaurant</i>@Html.ActionLink("Nutrición", "Index", "Home", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
-        <li><a href="#"><i class="material-icons">insert_chart</i>@Html.ActionLink("Evaluaciones", "Index", "Home", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
-        <li><a href="#"><i class="material-icons">event</i>@Html.ActionLink("Reservaciones", "Index", "Home", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
-        <li><a href="#"><i class="material-icons">directions_run</i>@Html.ActionLink("Clases", "Index", "Home", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
+        <li><a href="#"><i class="material-icons">fitness_center</i>@Html.ActionLink("Rutinas", "Routines", "Cliente", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
+        <li><a href="#"><i class="material-icons">accessibility_new</i>@Html.ActionLink("Inbody", "Inbody", "Cliente", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
+        <li><a href="#"><i class="material-icons">restaurant</i>@Html.ActionLink("Nutrición", "Plan", "Cliente", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
+        <li><a href="#"><i class="material-icons">insert_chart</i>@Html.ActionLink("Evaluaciones", "Evalutations", "Cliente", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
+        <li><a href="#"><i class="material-icons">event</i>@Html.ActionLink("Reservaciones", "Reservations", "Cleinte", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
+        <li><a href="#"><i class="material-icons">directions_run</i>@Html.ActionLink("Clases", "Classes", "Cliente", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
         <li><a href="#"><i class="material-icons">qr_code</i>@Html.ActionLink("QR", "QRCode", "Account", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
         <li><a href="#"><i class="material-icons">logout</i>@Html.ActionLink("Cerrar", "Index", "Home", new { area = "" }, new { @class = "waves-effect waves-dark" })</a></li>
     </ul>
@@ -106,52 +106,52 @@
     <br />
     <br />
     <br />
-        <br />
-        <div class="container">
-            <!--<section id="content">-->
-            
-            <div class="slider">
-                <div>
+    <br />
+    <div class="container">
+        <!--<section id="content">-->
+
+        <div class="slider">
+            <div>
                 <img src="~/Content/img/anuncio.jpg" />
-                </div>
-                <div>
+            </div>
+            <div>
                 <iframe width="447" height="795" src="https://www.youtube.com/embed/R8LmqQbwDNw" title="6 de septiembre de 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen alt="Slide 1"></iframe>
-                </div>
             </div>
-            </div>
-            @*end slider
+        </div>
+    </div>
+    @*end slider
         Resto del contenido*@
-            
-            <!--</section>-->
+
+    <!--</section>-->
 
 
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $('.slider').slick({
-                        // Opciones del slider aquí
-                        // Por ejemplo:
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        dots: true,
-                        // Agrega tus imágenes o videos como elementos <div> aquí
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        adaptiveHeight: true,
-                        infinite: true,
-                        responsive: [
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    slidesToShow: 1
-                                }
-                            }
-                        ]
-                    });
-                });
-            </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                // Opciones del slider aquí
+                // Por ejemplo:
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                // Agrega tus imágenes o videos como elementos <div> aquí
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                infinite: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 </html>

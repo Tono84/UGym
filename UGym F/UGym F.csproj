@@ -467,13 +467,28 @@
     <Content Include="Views\Shared\_Admin_layout.cshtml" />
     <Content Include="Views\Trainer\Profile.cshtml" />
     <Content Include="Views\Nutritionist\Index.cshtml" />
+    <Content Include="Views\Nutritionist\Profile.cshtml" />
+    <Content Include="Views\Therapist\Profile.cshtml" />
+    <Content Include="Views\Therapist\Index.cshtml" />
+    <Content Include="Views\Receptionist\Index.cshtml" />
+    <Content Include="Views\Receptionist\Profile.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Profile.cshtml" />
+    <Content Include="Views\Therapist\Clients.cshtml" />
+    <Content Include="Views\Therapist\Reports.cshtml" />
+    <Content Include="Views\Nutritionist\Reports.cshtml" />
+    <Content Include="Views\Nutritionist\Clients.cshtml" />
+    <Content Include="Views\Trainer\Evaluations.cshtml" />
+    <Content Include="Views\Trainer\Clients.cshtml" />
+    <Content Include="Views\Trainer\Routines.cshtml" />
+    <Content Include="Views\Trainer\Drafts.cshtml" />
+    <Content Include="Views\Trainer\Gestion.cshtml" />
+    <Content Include="Views\Trainer\Classes.cshtml" />
+    <Content Include="Views\Trainer\ModifyClass.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Admin\" />
-    <Folder Include="Views\Receptionist\" />
-    <Folder Include="Views\Therapist\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

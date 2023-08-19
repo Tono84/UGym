@@ -33,7 +33,7 @@ namespace UGym_F.Controllers
                 case "4":
                     return RedirectToAction("Index","Therapist");
                 case "5":
-                    return RedirectToAction("Index","Recepcionist");
+                    return RedirectToAction("Index","Receptionist");
                 case "6":
                     return RedirectToAction("Index","Admin");
                 default:
