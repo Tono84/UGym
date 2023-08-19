@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Profile";
-    Layout = "~/Views/Shared/_Client_layout.cshtml";
+    Layout = "~/Views/Shared/_Trainer_layout.cshtml";
 }
 
 
@@ -15,15 +15,15 @@
                     <span class="card-title" Infromación Personal></span>
                     <form>
                         <div class="input-field">
-                            <input id="cedula" type="text" class="validate" value="111557845">
+                            <input id="cedula" type="text" class="validate" value="111445798">
                             <label for="cedula">Cédula</label>
                         </div>
                         <div class="input-field">
-                            <input id="nombre" type="text" class="validate" vlaue="José Solórzano">
+                            <input id="nombre" type="text" class="validate" value="Pedro Simon">
                             <label for="nombre">Nombre Completo</label>
                         </div>
                         <div class="input-field">
-                            <input id="fechaNacimiento" type="text" class="datepicker" value="27/02/1984">
+                            <input id="fechaNacimiento" type="text" class="datepicker" value="02/12/1980">
                             <label for="fechaNacimiento">Fecha de Nacimiento</label>
                         </div>
                         <div class="input-field">
@@ -35,56 +35,34 @@
                             <label>Género</label>
                         </div>
                         <div class="input-field">
-                            <input id="ocupacion" type="text" class="validate" value="Dentista">
-                            <label for="ocupacion">Ocupación</label>
+                            <input id="ocupacion" type="text" class="validate" value="Entenador">
+                            <label for="ocupacion">Puesto</label>
                         </div>
                         <div class="input-field">
-                            <input id="correo" type="email" class="validate" value="cliente@noemail.com">
+                            <input id="correo" type="email" class="validate" value="Entrenador@noemail.com">
                             <label for="correo">Correo Electrónico</label>
                         </div>
                         <div class="input-field">
-                            <input id="direccion" type="text" class="validate" value="Ave 30, Escazú, San José, Costa Rica">
+                            <input id="direccion" type="text" class="validate" value="San José, Costa Rica">
                             <label for="direccion">Dirección</label>
                         </div>
                         <div class="input-field">
-                            <input id="telefono" type="tel" class="validate" value="89645545">
+                            <input id="telefono" type="tel" class="validate" value="99884455">
                             <label for="telefono">Número Telefónico</label>
                         </div>
                         <div class="input-field">
-                            <input id="contactoEmergencia" type="text" class="validate" value="Fabiola">
+                            <input id="contactoEmergencia" type="text" class="validate" value="Pepe">
                             <label for="contactoEmergencia">Nombre de Contacto de Emergencia</label>
                         </div>
                         <div class="input-field">
-                            <input id="telefonoEmergencia" type="tel" class="validate" value="89786854">
+                            <input id="telefonoEmergencia" type="tel" class="validate" value="99887744">
                             <label for="telefonoEmergencia">Número de Contacto de Emergencia</label>
                         </div>
-                        <div class="input-field">
-                            <select>
-                                <option value="Premium" disabled selected>Tipo de Membresía</option>
-                                <option value="Premium">Premium</option>
-                                <option value="Basica">Basica</option>
-                            </select>
-                            <label>Tipo de Membresía</label>
-                        </div>
-                        <div class="input-field">
-                            <select>
-                                <option value="Activa" disabled selected>Estado</option>
-                                <option value="activa">Activo</option>
-                                <option value="inactiva">Inactivo</option>
-                            </select>
-                            <label>Estado</label>
-                        </div>
-                        <div class="input-field">
-                            <input id="fechaExpiracion" type="text" class="datepicker" value="24/08/2023">
-                            <label for="fechaExpiracion">Fecha de Expiración</label>
-                        </div>
                         <button class="btn waves-effect waves-light" type="button" name="action" id="guardarBtn">Guardar</button>
-
                     </form>
                     <br />
-                    @Html.ActionLink("Cancelar", "Index", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
-                    @Html.ActionLink("Membresia", "Membership", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
-                    @Html.ActionLink("Regresar", "Index", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                    @Html.ActionLink("Cancelar", "Index", "Trainer", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                    @Html.ActionLink("Regresar", "Index", "Trainer", new { area = "" }, new { @class = "btn waves-effect waves-light" })
                 </div>
             </div>
         </div>
@@ -94,8 +72,8 @@
 <!-- Modal -->
 <div id="modal1" class="modal modal-fixed-footer" style="max-width: 15%; max-height: 15%; padding: 0px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
 
-        <h4>Información Actualizada</h4>
-        <p>La información se ha actualizado correctamente.</p>
+    <h4>Información Actualizada</h4>
+    <p>La información se ha actualizado correctamente.</p>
 
 </div>
 
@@ -128,5 +106,4 @@
         M.Datepicker.init(datepickers, options);
     });
 </script>
-
 

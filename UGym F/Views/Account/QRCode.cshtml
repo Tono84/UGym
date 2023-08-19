@@ -1,8 +1,11 @@
-﻿@{
-    ViewBag.Title = "Código QR";
+﻿
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Client_layout.cshtml";
 }
 
-<h2>Código QR</h2>
+
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -47,6 +50,7 @@
             max-width: 100%;
             height: auto;
         }
+
         .guardar-button {
             margin-top: 10px;
         }
@@ -60,7 +64,7 @@
             <img src="~/Content/img/CodigoQR.png" alt="Código QR" class="qr-image" />
 
         </div>
-        <button class="guardar-button btn waves-effect waves-light">Guardar</button>
+        @Html.ActionLink("Guardar", "Index", "Cliente", new { area = "" }, new { @class = "guardar-button btn waves-effect waves-light" })
     </div>
     <br />
     <br />

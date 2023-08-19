@@ -145,10 +145,15 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdministradoresController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NutritionistController.cs" />
+    <Compile Include="Controllers\ReceptionistController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\TherapistController.cs" />
+    <Compile Include="Controllers\TrainerController.cs" />
     <Compile Include="Ejercicios.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -452,10 +457,23 @@
     <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="Views\Shared\_Client_layout.cshtml" />
     <Content Include="Views\Cliente\Profile.cshtml" />
+    <Content Include="Views\Cliente\Membership.cshtml" />
+    <Content Include="Views\Cliente\Payment.cshtml" />
+    <Content Include="Views\Shared\_Trainer_layout.cshtml" />
+    <Content Include="Views\Trainer\Index.cshtml" />
+    <Content Include="Views\Shared\_Nutritionist_layout.cshtml" />
+    <Content Include="Views\Shared\_Receptionist_layout.cshtml" />
+    <Content Include="Views\Shared\_Therapist_layout.cshtml" />
+    <Content Include="Views\Shared\_Admin_layout.cshtml" />
+    <Content Include="Views\Trainer\Profile.cshtml" />
+    <Content Include="Views\Nutritionist\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Views\Receptionist\" />
+    <Folder Include="Views\Therapist\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

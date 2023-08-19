@@ -27,15 +27,15 @@ namespace UGym_F.Controllers
                 case "1":
                     return RedirectToAction("Index","Cliente");
                 case "2":
-                    return RedirectToAction("Vista2");
+                    return RedirectToAction("Index","Trainer");
                 case "3":
-                    return RedirectToAction("Vista3");
+                    return RedirectToAction("Index","Nutritionist");
                 case "4":
-                    return RedirectToAction("Vista4");
+                    return RedirectToAction("Index","Therapist");
                 case "5":
-                    return RedirectToAction("Vista5");
+                    return RedirectToAction("Index","Recepcionist");
                 case "6":
-                    return RedirectToAction("Vista6");
+                    return RedirectToAction("Index","Admin");
                 default:
                    
                     return RedirectToAction("Login");
@@ -64,7 +64,7 @@ namespace UGym_F.Controllers
 
         public ActionResult QRCode()
         {
-            return View("Index", "Cliente");
+            return View();
         }
     }
 }

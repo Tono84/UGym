@@ -6,27 +6,28 @@ using System.Web.Mvc;
 
 namespace UGym_F.Controllers
 {
-    public class ClienteController : Controller
+    public class TrainerController : Controller
     {
-        // GET: Cliente
+        // GET: Trainer
         public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult Profile() 
+        public ActionResult Profile()
         {
             return View();
         }
 
-        public ActionResult Membership()
+        public ActionResult Clients()
+        {
+            return View();
+
+        }
+
+        public ActionResult Routines()
         {
             return View();
         }
 
-        public ActionResult Payment() 
-        {
-            return View();
-        }
     }
 }
