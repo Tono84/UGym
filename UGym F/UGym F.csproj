@@ -485,6 +485,14 @@
     <Content Include="Views\Trainer\Gestion.cshtml" />
     <Content Include="Views\Trainer\Classes.cshtml" />
     <Content Include="Views\Trainer\ModifyClass.cshtml" />
+    <Content Include="Views\Cliente\Routines.cshtml" />
+    <Content Include="Views\Cliente\MyRoutine.cshtml" />
+    <Content Include="Views\Cliente\Records.cshtml" />
+    <Content Include="Views\Cliente\Inbody.cshtml" />
+    <Content Include="Views\Cliente\Reports.cshtml" />
+    <Content Include="Views\Cliente\Reservations.cshtml" />
+    <Content Include="Views\Cliente\Classes.cshtml" />
+    <Content Include="Views\Cliente\Plan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

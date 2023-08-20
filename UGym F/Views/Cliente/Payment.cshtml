@@ -2,7 +2,7 @@
     ViewBag.Title = "Renovar Membresía";
     Layout = "~/Views/Shared/_Client_layout.cshtml";
 }
-@*<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">*@
+
 <div class="container">
     <h2>Renovar Membresía</h2>
     <div class="row">
@@ -11,6 +11,12 @@
                 <div class="card-content">
                     <span class="card-title">Información de Tarjeta</span>
                     <form>
+                        <div class="info-message" style="display: none;">
+                            <div class="card-panel teal lighten-2">
+                                <span class="white-text">Membresía renovada con éxito</span>
+                                <span class="white-text">Nueva fecha de expiración: 24/08/2024</span>
+                            </div>
+                        </div>
                         <div class="input-field">
                             <input id="numeroTarjeta" type="text" class="validate" placeholder="Número de Tarjeta">
                         </div>
@@ -33,37 +39,24 @@
     </div>
 </div>
 
-<!-- Aviso de Renovación -->
-<div class="modal fade" id="modalRenovacion" tabindex="-1" role="dialog" aria-labelledby="modalRenovacionLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalRenovacionLabel">Membresía Renovada</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                Pago Exitoso
-                <p>Nueva fecha de expiración: 24/08/2024</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Scripts -->
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $('.datepicker').datepicker({
+    document.addEventListener('DOMContentLoaded', function () {
+        var selectElems = document.querySelectorAll('select');
+        var datepickers = document.querySelectorAll('.datepicker');
+
+        M.FormSelect.init(selectElems);
+        M.Datepicker.init(datepickers, {
             format: 'dd/mm/yyyy'
         });
 
-        $('#pagarBtn').on('click', function (event) {
-            $('#modalRenovacion').modal('show');
+        var pagarBtn = document.querySelector('.pagarBtn');
+        var infoMessage = document.querySelector('.info-message');
+
+        pagarBtn.addEventListener('click', function () {
+            infoMessage.style.display = 'block';
         });
     });
 </script>
-

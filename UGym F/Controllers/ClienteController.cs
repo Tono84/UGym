@@ -28,5 +28,45 @@ namespace UGym_F.Controllers
         {
             return View();
         }
+
+        public ActionResult Routines()
+        {
+            return View();
+        }
+
+        public ActionResult MyRoutine()
+        {
+            return View();
+        }
+
+        public ActionResult Records()
+        {
+            return View();
+        }
+
+        public ActionResult Inbody()
+        {
+            return View();
+        }
+
+        public ActionResult Reports()
+        {
+            return View();
+        }
+
+        public ActionResult Reservations()
+        {
+            return View();
+        }
+
+        public ActionResult Classes()
+        {
+            return View();
+        }
+
+        public ActionResult Plan()
+        {
+            return View();
+        }
     }
 }
