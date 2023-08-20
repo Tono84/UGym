@@ -18,5 +18,25 @@ namespace UGym_F.Controllers
         {
             return View();
         }
+
+        public ActionResult Users()
+        {
+            return View();
+        }
+
+       public ActionResult Clients() 
+        {
+            return View();
+        }
+
+        public ActionResult Staff()
+        {
+            return View();
+        }
+
+        public ActionResult Reports()
+        {
+            return View();
+        }
     }
 }
