@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Historial de Evaluaciones Físicas";
+    Layout = "~/Views/Shared/_Client_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Historial de Evaluaciones Físicas</h2>
+    <ul class="collection">
+        <li class="collection-item" data-evaluation-id="1">
+            <a href="#" onclick="verEvaluacion(1)">Ver</a><p>Evaluación del 2023-08-20</p>
+        </li>
+        <li class="collection-item" data-evaluation-id="2">
+            <a href="#" onclick="verEvaluacion(2)">Ver</a><p>Evaluación del 2023-08-20</p>
+        </li>
+        <li class="collection-item" data-evaluation-id="3">
+            <a href="#" onclick="verEvaluacion(3)">Ver</a><p>Evaluación del 2023-08-10</p>
+        </li>
+        <!-- Agregar más evaluaciones aquí -->
+    </ul>
+    <br />
+    <br />
+    @Html.ActionLink("Regresar", "Index", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+    <div id="resultado-evaluacion" style="display: none;">
+        <h3>Detalle de la Evaluación</h3>
+        <p><strong>Fecha:</strong> <span id="fecha"></span></p>
+        <p><strong>Peso:</strong> <span id="peso"></span> kg</p>
+        <p><strong>Altura:</strong> <span id="altura"></span> cm</p>
+        <p><strong>Porcentaje de Grasa Corporal:</strong> <span id="porcentajeGrasa"></span>%</p>
+        <p><strong>Masa Muscular:</strong> <span id="masaMuscular"></span> kg</p>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function verEvaluacion(evaluationId) {
+        var evaluacion = obtenerEvaluacion(evaluationId);
+        if (evaluacion) {
+            mostrarResultados(evaluacion);
+        }
+    }
+
+    function obtenerEvaluacion(evaluationId) {
+        // Simulación de datos en memoria
+        var evaluaciones = [
+            { Id: 1, Fecha: "2023-08-20", Peso: 70.5, Altura: 175, PorcentajeGrasa: 18.5, MasaMuscular: 60.2 },
+            { Id: 2, Fecha: "2023-08-15", Peso: 72.0, Altura: 175, PorcentajeGrasa: 20.0, MasaMuscular: 59.0 },
+            { Id: 3, Fecha: "2023-08-10", Peso: 68.5, Altura: 175, PorcentajeGrasa: 15.5, MasaMuscular: 61.8 }
+            // Agregar más evaluaciones aquí
+        ];
+
+        return evaluaciones.find(evaluacion => evaluacion.Id === evaluationId);
+    }
+
+    function mostrarResultados(evaluacion) {
+        $('#fecha').text(evaluacion.Fecha);
+        $('#peso').text(evaluacion.Peso);
+        $('#altura').text(evaluacion.Altura);
+        $('#porcentajeGrasa').text(evaluacion.PorcentajeGrasa);
+        $('#masaMuscular').text(evaluacion.MasaMuscular);
+        $('#resultado-evaluacion').show();
+    }
+</script>
