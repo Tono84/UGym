@@ -24,7 +24,6 @@ C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\sta
 C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\staticwebassets.pack.json
 C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\scopedcss\bundle\FrontEnd.styles.css
 C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\scopedcss\projectbundle\FrontEnd.bundle.scp.css
 C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\FrontEnd.csproj.CopyComplete
@@ -33,3 +32,4 @@ C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\ref
 C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\FrontEnd.pdb
 C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\FrontEnd.genruntimeconfig.cache
 C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\ref\FrontEnd.dll
+C:\Users\serra\source\repos\UGym\UGym_NetCore\UGym\FrontEnd\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutOld.cshtml.rz.scp.css

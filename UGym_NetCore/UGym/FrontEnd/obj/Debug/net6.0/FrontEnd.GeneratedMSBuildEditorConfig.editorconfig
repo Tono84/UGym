@@ -36,26 +36,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Administradores/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Administradores/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXERlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Administradores/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Administradores/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Administradores/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Clients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2xpZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -186,26 +166,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Receptionist/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0XFByb2ZpbGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Roles/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Roles/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Roles/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Roles/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Roles/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/serra/source/repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/Error.cshtml]

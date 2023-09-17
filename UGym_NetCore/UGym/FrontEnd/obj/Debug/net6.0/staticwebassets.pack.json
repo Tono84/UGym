@@ -5,12 +5,1060 @@
       "PackagePath": "staticwebassets\\FrontEnd.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\Site.css",
+      "PackagePath": "staticwebassets\\Content\\Site.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\animate.css",
+      "PackagePath": "staticwebassets\\Content\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Content\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\custom-fonts.css",
+      "PackagePath": "staticwebassets\\Content\\css\\custom-fonts.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\fancybox\\blank.gif",
+      "PackagePath": "staticwebassets\\Content\\css\\fancybox\\blank.gif"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\fancybox\\fancybox_loading.gif",
+      "PackagePath": "staticwebassets\\Content\\css\\fancybox\\fancybox_loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\fancybox\\fancybox_overlay.png",
+      "PackagePath": "staticwebassets\\Content\\css\\fancybox\\fancybox_overlay.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\fancybox\\fancybox_sprite.png",
+      "PackagePath": "staticwebassets\\Content\\css\\fancybox\\fancybox_sprite.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\fancybox\\jquery.fancybox.css",
+      "PackagePath": "staticwebassets\\Content\\css\\fancybox\\jquery.fancybox.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\flexslider.css",
+      "PackagePath": "staticwebassets\\Content\\css\\flexslider.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\Content\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\gallery-1.css",
+      "PackagePath": "staticwebassets\\Content\\css\\gallery-1.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\Content\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\materialize.min.css",
+      "PackagePath": "staticwebassets\\Content\\css\\materialize.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\css\\style.css",
+      "PackagePath": "staticwebassets\\Content\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\Content\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\fonts\\customicon\\Icons.eot",
+      "PackagePath": "staticwebassets\\Content\\fonts\\customicon\\Icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\fonts\\customicon\\Icons.svg",
+      "PackagePath": "staticwebassets\\Content\\fonts\\customicon\\Icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\fonts\\customicon\\Icons.ttf",
+      "PackagePath": "staticwebassets\\Content\\fonts\\customicon\\Icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\fonts\\customicon\\Icons.woff",
+      "PackagePath": "staticwebassets\\Content\\fonts\\customicon\\Icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\Content\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\Content\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\Content\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\Content\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\CodigoQR.png",
+      "PackagePath": "staticwebassets\\Content\\img\\CodigoQR.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\Logo_grande.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\Logo_grande.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\U Wellness Center Phone Banner Web.png",
+      "PackagePath": "staticwebassets\\Content\\img\\U Wellness Center Phone Banner Web.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\anuncio.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\anuncio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\Content\\img\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\bg_direction_nav.png",
+      "PackagePath": "staticwebassets\\Content\\img\\bg_direction_nav.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\client1.png",
+      "PackagePath": "staticwebassets\\Content\\img\\client1.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\client2.png",
+      "PackagePath": "staticwebassets\\Content\\img\\client2.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\client3.png",
+      "PackagePath": "staticwebassets\\Content\\img\\client3.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\dev1.png",
+      "PackagePath": "staticwebassets\\Content\\img\\dev1.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\glyphicons-halflings-white.png",
+      "PackagePath": "staticwebassets\\Content\\img\\glyphicons-halflings-white.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\glyphicons-halflings.png",
+      "PackagePath": "staticwebassets\\Content\\img\\glyphicons-halflings.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\img1.png",
+      "PackagePath": "staticwebassets\\Content\\img\\img1.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\nivo-bullets.png",
+      "PackagePath": "staticwebassets\\Content\\img\\nivo-bullets.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\service1.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\service1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\service2.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\service2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\service3.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\service3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\slides\\1.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\slides\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\slides\\2.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\slides\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\team1.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\team1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\team2.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\team2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\team3.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\team3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\team4.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\team4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\works\\1.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\works\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\works\\2.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\works\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\works\\3.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\works\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\works\\4.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\works\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\works\\5.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\works\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\works\\6.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\works\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\works\\7.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\works\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\img\\works\\8.jpg",
+      "PackagePath": "staticwebassets\\Content\\img\\works\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\animate.js",
+      "PackagePath": "staticwebassets\\Content\\js\\animate.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\custom.js",
+      "PackagePath": "staticwebassets\\Content\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\flexslider\\jquery.flexslider.js",
+      "PackagePath": "staticwebassets\\Content\\js\\flexslider\\jquery.flexslider.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\flexslider\\setting.js",
+      "PackagePath": "staticwebassets\\Content\\js\\flexslider\\setting.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\google-code-prettify\\prettify.css",
+      "PackagePath": "staticwebassets\\Content\\js\\google-code-prettify\\prettify.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\google-code-prettify\\prettify.js",
+      "PackagePath": "staticwebassets\\Content\\js\\google-code-prettify\\prettify.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\jquery.easing.1.3.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.easing.1.3.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\jquery.fancybox-media.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.fancybox-media.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\jquery.fancybox.pack.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.fancybox.pack.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\jquery.flexslider.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.flexslider.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\jquery.isotope.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.isotope.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\Content\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\modernizr.custom.js",
+      "PackagePath": "staticwebassets\\Content\\js\\modernizr.custom.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\portfolio\\jquery.quicksand.js",
+      "PackagePath": "staticwebassets\\Content\\js\\portfolio\\jquery.quicksand.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\portfolio\\setting.js",
+      "PackagePath": "staticwebassets\\Content\\js\\portfolio\\setting.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\quicksand\\jquery.quicksand.js",
+      "PackagePath": "staticwebassets\\Content\\js\\quicksand\\jquery.quicksand.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\js\\quicksand\\setting.js",
+      "PackagePath": "staticwebassets\\Content\\js\\quicksand\\setting.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\LICENSE",
+      "PackagePath": "staticwebassets\\Content\\materialize"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\README.md",
+      "PackagePath": "staticwebassets\\Content\\materialize\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\css\\materialize.css",
+      "PackagePath": "staticwebassets\\Content\\materialize\\css\\materialize.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\css\\materialize.min.css",
+      "PackagePath": "staticwebassets\\Content\\materialize\\css\\materialize.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\material-design-icons\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\material-design-icons\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.svg",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\material-design-icons\\Material-Design-Icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Bold.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Bold.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Bold.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Light.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Light.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Light.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Medium.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Medium.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Medium.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Regular.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Regular.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Regular.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Thin.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Thin.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Thin.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\font\\roboto\\Roboto-Thin.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\font\\roboto\\Roboto-Thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Bold.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Bold.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Bold.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Light.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Light.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Light.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Medium.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Medium.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Medium.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Regular.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Regular.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Regular.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Thin.eot",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Thin.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Thin.woff",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\fonts\\roboto\\Roboto-Thin.woff2",
+      "PackagePath": "staticwebassets\\Content\\materialize\\fonts\\roboto\\Roboto-Thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\js\\materialize.js",
+      "PackagePath": "staticwebassets\\Content\\materialize\\js\\materialize.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\Content\\materialize\\js\\materialize.min.js",
+      "PackagePath": "staticwebassets\\Content\\materialize\\js\\materialize.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\custom-fonts.css",
+      "PackagePath": "staticwebassets\\css\\custom-fonts.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\fancybox\\blank.gif",
+      "PackagePath": "staticwebassets\\css\\fancybox\\blank.gif"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\fancybox\\fancybox_loading.gif",
+      "PackagePath": "staticwebassets\\css\\fancybox\\fancybox_loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\fancybox\\fancybox_overlay.png",
+      "PackagePath": "staticwebassets\\css\\fancybox\\fancybox_overlay.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\fancybox\\fancybox_sprite.png",
+      "PackagePath": "staticwebassets\\css\\fancybox\\fancybox_sprite.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\fancybox\\jquery.fancybox.css",
+      "PackagePath": "staticwebassets\\css\\fancybox\\jquery.fancybox.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\flexslider.css",
+      "PackagePath": "staticwebassets\\css\\flexslider.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\gallery-1.css",
+      "PackagePath": "staticwebassets\\css\\gallery-1.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\materialize.css",
+      "PackagePath": "staticwebassets\\css\\materialize.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\materialize.min.css",
+      "PackagePath": "staticwebassets\\css\\materialize.min.css"
+    },
+    {
       "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\customicon\\Icons.eot",
+      "PackagePath": "staticwebassets\\fonts\\customicon\\Icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\customicon\\Icons.svg",
+      "PackagePath": "staticwebassets\\fonts\\customicon\\Icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\customicon\\Icons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\customicon\\Icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\customicon\\Icons.woff",
+      "PackagePath": "staticwebassets\\fonts\\customicon\\Icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\material-design-icons\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\fonts\\material-design-icons\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\material-design-icons\\Material-Design-Icons.eot",
+      "PackagePath": "staticwebassets\\fonts\\material-design-icons\\Material-Design-Icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\material-design-icons\\Material-Design-Icons.svg",
+      "PackagePath": "staticwebassets\\fonts\\material-design-icons\\Material-Design-Icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\material-design-icons\\Material-Design-Icons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\material-design-icons\\Material-Design-Icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\material-design-icons\\Material-Design-Icons.woff",
+      "PackagePath": "staticwebassets\\fonts\\material-design-icons\\Material-Design-Icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\material-design-icons\\Material-Design-Icons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\material-design-icons\\Material-Design-Icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Bold.eot",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Bold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Light.eot",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Light.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Light.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Light.woff2",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Medium.eot",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Medium.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Medium.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Medium.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Medium.woff2",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Medium.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Regular.eot",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Thin.eot",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Thin.eot"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Thin.woff",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Thin.woff"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\fonts\\roboto\\Roboto-Thin.woff2",
+      "PackagePath": "staticwebassets\\fonts\\roboto\\Roboto-Thin.woff2"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\CodigoQR.png",
+      "PackagePath": "staticwebassets\\img\\CodigoQR.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\Logo_grande.jpg",
+      "PackagePath": "staticwebassets\\img\\Logo_grande.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\U Wellness Center Phone Banner Web.png",
+      "PackagePath": "staticwebassets\\img\\U Wellness Center Phone Banner Web.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\img\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\anuncio.jpg",
+      "PackagePath": "staticwebassets\\img\\anuncio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\img\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\bg_direction_nav.png",
+      "PackagePath": "staticwebassets\\img\\bg_direction_nav.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\client1.png",
+      "PackagePath": "staticwebassets\\img\\client1.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\client2.png",
+      "PackagePath": "staticwebassets\\img\\client2.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\client3.png",
+      "PackagePath": "staticwebassets\\img\\client3.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\dev1.png",
+      "PackagePath": "staticwebassets\\img\\dev1.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\glyphicons-halflings-white.png",
+      "PackagePath": "staticwebassets\\img\\glyphicons-halflings-white.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\glyphicons-halflings.png",
+      "PackagePath": "staticwebassets\\img\\glyphicons-halflings.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\img1.png",
+      "PackagePath": "staticwebassets\\img\\img1.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\nivo-bullets.png",
+      "PackagePath": "staticwebassets\\img\\nivo-bullets.png"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\service1.jpg",
+      "PackagePath": "staticwebassets\\img\\service1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\service2.jpg",
+      "PackagePath": "staticwebassets\\img\\service2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\service3.jpg",
+      "PackagePath": "staticwebassets\\img\\service3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\slides\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\slides\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\slides\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\slides\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\team1.jpg",
+      "PackagePath": "staticwebassets\\img\\team1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\team2.jpg",
+      "PackagePath": "staticwebassets\\img\\team2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\team3.jpg",
+      "PackagePath": "staticwebassets\\img\\team3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\team4.jpg",
+      "PackagePath": "staticwebassets\\img\\team4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\works\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\works\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\works\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\works\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\works\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\works\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\works\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\works\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\works\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\works\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\works\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\works\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\works\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\works\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\img\\works\\8.jpg",
+      "PackagePath": "staticwebassets\\img\\works\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\animate.js",
+      "PackagePath": "staticwebassets\\js\\animate.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\flexslider\\jquery.flexslider.js",
+      "PackagePath": "staticwebassets\\js\\flexslider\\jquery.flexslider.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\flexslider\\setting.js",
+      "PackagePath": "staticwebassets\\js\\flexslider\\setting.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\google-code-prettify\\prettify.css",
+      "PackagePath": "staticwebassets\\js\\google-code-prettify\\prettify.css"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\google-code-prettify\\prettify.js",
+      "PackagePath": "staticwebassets\\js\\google-code-prettify\\prettify.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\jquery.easing.1.3.js",
+      "PackagePath": "staticwebassets\\js\\jquery.easing.1.3.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\jquery.fancybox-media.js",
+      "PackagePath": "staticwebassets\\js\\jquery.fancybox-media.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\jquery.fancybox.pack.js",
+      "PackagePath": "staticwebassets\\js\\jquery.fancybox.pack.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\jquery.flexslider.js",
+      "PackagePath": "staticwebassets\\js\\jquery.flexslider.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\jquery.isotope.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.isotope.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\materialize.js",
+      "PackagePath": "staticwebassets\\js\\materialize.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\materialize.min.js",
+      "PackagePath": "staticwebassets\\js\\materialize.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\modernizr.custom.js",
+      "PackagePath": "staticwebassets\\js\\modernizr.custom.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\portfolio\\jquery.quicksand.js",
+      "PackagePath": "staticwebassets\\js\\portfolio\\jquery.quicksand.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\portfolio\\setting.js",
+      "PackagePath": "staticwebassets\\js\\portfolio\\setting.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\quicksand\\jquery.quicksand.js",
+      "PackagePath": "staticwebassets\\js\\quicksand\\jquery.quicksand.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\quicksand\\setting.js",
+      "PackagePath": "staticwebassets\\js\\quicksand\\setting.js"
     },
     {
       "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\js\\site.js",
@@ -221,6 +1269,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate-vsdoc.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate-vsdoc.js"
+    },
+    {
       "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
@@ -233,6 +1285,62 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.intellisense.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.4.1.intellisense.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.4.1.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.4.1.min.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.4.1.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.4.1.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.7.0.intellisense.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.7.0.intellisense.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.7.0.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.7.0.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.7.0.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.7.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.7.0.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.7.0.min.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.7.0.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.7.0.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.7.0.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.7.0.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery-3.7.0.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.7.0.slim.min.map"
+    },
+    {
       "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
@@ -243,6 +1351,18 @@
     {
       "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\materialize\\materialize.js",
+      "PackagePath": "staticwebassets\\lib\\materialize\\materialize.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\materialize\\materialize.min.js",
+      "PackagePath": "staticwebassets\\lib\\materialize\\materialize.min.js"
+    },
+    {
+      "Id": "C:\\Users\\serra\\source\\repos\\UGym\\UGym_NetCore\\UGym\\FrontEnd\\wwwroot\\lib\\modernizr-2.8.3.js",
+      "PackagePath": "staticwebassets\\lib\\modernizr-2.8.3.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FrontEnd.Microsoft.AspNetCore.StaticWebAssets.props",

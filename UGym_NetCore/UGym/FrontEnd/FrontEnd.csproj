@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <Folder Include="Helpers\" />
+    <Folder Include="Views\Administradores\" />
+    <Folder Include="Views\Roles\" />
   </ItemGroup>
 
 </Project>

@@ -1,14 +1,14 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
-using System.Web.Mvc;
-using UGym_F;
+using FrontEnd.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
-namespace UGym_F.Controllers
+namespace FrontEnd.Controllers
 {
     public class AdministradoresController : Controller
     {
@@ -130,3 +130,4 @@ namespace UGym_F.Controllers
         }
     }
 }
+*/
