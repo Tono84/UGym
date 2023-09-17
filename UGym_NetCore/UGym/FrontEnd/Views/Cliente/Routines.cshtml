@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Routines";
+    Layout = "~/Views/Shared/_Client_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Opciones de Rutinas</h2>
+    <button id="rutinas-btn" class="btn waves-effect waves-light">Rutinas</button>
+    <div id="miRutina-option" style="display: none;">
+        <a href="@Url.Action("MyRoutine", "Cliente")" id="miRutina-link" class="btn waves-effect waves-light">Mi Rutina</a>
+    </div>
+    <div id="historial-option" style="display: none;">
+        <a href="@Url.Action("Records", "Cliente")" id="historial-link" class="btn waves-effect waves-light">Historial</a>
+    </div>
+    <br />
+    <br />
+    @Html.ActionLink("Regresar", "Index", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#rutinas-btn').click(function () {
+            $('#miRutina-option').show();
+            $('#historial-option').show();
+        });
+    });
+</script>
