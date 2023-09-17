@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Admin_layout.cshtml";
+}
+
+
+
+<div class="container">
+    <h2>Perfil</h2>
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title" Infromación Personal></span>
+                    <form>
+                        <div class="info-message" style="display: none;">
+                            <h4>Información Actualizada</h4>
+                            <p>La información se ha actualizado correctamente.</p>
+                        </div>
+                        <div class="input-field">
+                            <input id="cedula" type="text" class="validate" value="112233556">
+                            <label for="cedula">Cédula</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="nombre" type="text" class="validate" value="Josep Russel">
+                            <label for="nombre">Nombre Completo</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="fechaNacimiento" type="text" class="datepicker" value="11/27/1989">
+                            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                        </div>
+                        <div class="input-field">
+                            <select>
+                                <option value="" disabled selected>masculino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                            <label>Género</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="correo" type="email" class="validate" value="admin@noemail.com">
+                            <label for="correo">Correo Electrónico</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="direccion" type="text" class="validate" value="San José, Costa Rica">
+                            <label for="direccion">Dirección</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="telefono" type="tel" class="validate" value="55664477">
+                            <label for="telefono">Número Telefónico</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="contactoEmergencia" type="text" class="validate" value="pop">
+                            <label for="contactoEmergencia">Nombre de Contacto de Emergencia</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="telefonoEmergencia" type="tel" class="validate" value="88995577">
+                            <label for="telefonoEmergencia">Número de Contacto de Emergencia</label>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="button" name="action" id="guardarBtn">Guardar</button>
+                    </form>
+                    <br />
+                    @Html.ActionLink("Cancelar", "Index", "Admin", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                    @Html.ActionLink("Regresar", "Index", "Admin", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var guardarBtn = document.getElementById('guardarBtn');
+        var infoMessage = document.querySelector('.info-message');
+
+        guardarBtn.addEventListener('click', function () {
+            infoMessage.style.display = 'block';
+        });
+
+        // Inicializar elementos de Materialize (asegúrate de tener los scripts cargados)
+        var selectElems = document.querySelectorAll('select');
+        var datepickers = document.querySelectorAll('.datepicker');
+
+        M.FormSelect.init(selectElems);
+        M.Datepicker.init(datepickers, {
+            format: 'dd/mm/yyyy'
+        });
+    });
+</script>
+
+

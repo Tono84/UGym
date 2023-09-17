@@ -1,0 +1,144 @@
+﻿@{
+    ViewBag.Title = "Staff";
+    Layout = "~/Views/Shared/_Admin_layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reportes de Gimnasio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Reportes de Gimnasio</h2>
+        <button id="btnTasaRetencion" class="btn waves-effect waves-light">Retención</button>
+        <button id="btnEficaciaClases" class="btn waves-effect waves-light">Clases</button>
+        <button id="btnDuracionMembresias" class="btn waves-effect waves-light">Membresias</button>
+        <button id="btnAsistencia" class="btn waves-effect waves-light">Asistencia</button>
+        <button id="btnIngresos" class="btn waves-effect waves-light">Ingresos</button>
+        <button id="btnLimpiar" class="btn waves-effect waves-light">Limpiar</button>
+        @Html.ActionLink("Regresar", "Index", "Admin", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+
+        <div id="reporteContainer" class="hide">
+            <!-- Contenido de los reportes -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+
+            const reporteContainer = document.getElementById('reporteContainer');
+            const btnTasaRetencion = document.getElementById('btnTasaRetencion');
+            const btnEficaciaClases = document.getElementById('btnEficaciaClases');
+            const btnDuracionMembresias = document.getElementById('btnDuracionMembresias');
+            const btnAsistencia = document.getElementById('btnAsistencia');
+            const btnIngresos = document.getElementById('btnIngresos');
+            const btnLimpiar = document.getElementById('btnLimpiar');
+            const btnRegresar = document.getElementById('btnRegresar');
+
+            function mostrarReporte(reporte) {
+                reporteContainer.innerHTML = reporte;
+                reporteContainer.classList.remove('hide');
+            }
+
+            function ocultarReporte() {
+                reporteContainer.innerHTML = '';
+                reporteContainer.classList.add('hide');
+            }
+
+            btnTasaRetencion.addEventListener('click', function () {
+                const reporte = `
+                  <h3>Tasa de Retención</h3>
+                    <p>Período de tiempo: Anual</p>
+                    <p>Número total de clientes al inicio del período: 500</p>
+                    <p>Nuevos clientes: 50</p>
+                    <p>Clientes que han renovado su membresía: 400</p>
+                    <p>Clientes que han cancelado su membresía: 20</p>
+                    <p>Tasa de retención: 80%</p>
+                    <p>Duración promedio de membresía: 12 meses</p>
+                    <p>Motivos de cancelación: Cambio de residencia, Falta de tiempo</p>
+                    <p>Análisis de tendencias: La tasa de retención ha aumentado respecto al año anterior.</p>
+                        `;
+                mostrarReporte(reporte);
+            });
+
+            btnEficaciaClases.addEventListener('click', function () {
+                const reporte = `
+                  <h3>Eficacia de Clases</h3>
+                    <p>Nombre de la clase: Yoga</p>
+                    <p>Horarios y frecuencia: Lunes y Miércoles a las 9:00 AM</p>
+                    <p>Capacidad y asistencia: Capacidad de 20 personas, Asistencia promedio de 15 personas</p>
+                    <p>Porcentaje de ocupación: 75%</p>
+                    <p>Retención de clientes: 80%</p>
+                    <p>Rotación de clases: 20%</p>
+                    <p>Comparación de rendimiento: Mayor asistencia en las clases de Yoga en comparación con Pilates.</p>
+                    <p>Puede filtrar o agrupar por cualquiera de las opciones.</p>
+               
+                        `;
+                mostrarReporte(reporte);
+            });
+
+            btnDuracionMembresias.addEventListener('click', function () {
+                const reporte = `
+                  <h3>Duración de Membresias</h3>
+                    <p>Período de tiempo: Trimestre actual</p>
+                    <p>Número total de clientes: 200</p>
+                    <p>Número de clientes que renovaron sus membresías: 150</p>
+                    <p>Número de clientes: 200</p>
+                    <p>Duración individual de las membresías: 6 meses</p>
+                    <p>Duración promedio de las membresías: 5 meses</p>
+                    <p>Análisis de tendencias: Incremento en la duración promedio respecto al último trimestre.</p>
+                    <p>Segmentación de duración: Tipo de membresía - Premium: 6 meses, Básica: 4 meses. Tipo de pago - Mensual: 5 meses, Anual: 7 meses.</p>
+                    <p>Puede filtrar o agrupar por cualquiera de las opciones.</p>
+           
+                        `;
+                mostrarReporte(reporte);
+            });
+
+            btnAsistencia.addEventListener('click', function () {
+                const reporte = `
+                    <h3>Asistencia</h3>
+                    <p>Periodo de tiempo: Semana actual</p>
+                    <p>Número total de miembros: 300</p>
+                    <p>Asistencia diaria: 250</p>
+                    <p>Asistencia semanal: 1800</p>
+                    <p>Asistencia mensual: 7500</p>
+                    <p>Horarios de mayor asistencia: 17:00 - 19:00</p>
+                    <p>Horarios de menor asistencia: 09:00 - 11:00</p>
+                    <p>Análisis de tendencias: Incremento en la asistencia semanal en comparación con el último mes.</p>
+                    <p>Ocupación promedio: 75%</p>
+                    <p>Puede filtrar o agrupar por cualquiera de las opciones.</p>
+      
+                        `;
+                mostrarReporte(reporte);
+            });
+
+            btnIngresos.addEventListener('click', function () {
+                const reporte = `
+                   <h3>Ingresos</h3>
+                    <p>Periodo de tiempo: Trimestre actual</p>
+                    <p>Ingresos total: $25,000</p>
+                    <p>Desglose de fuentes de ingresos: Membresías ($20,000), Clases ($4,000), Otros ($1,000)</p>
+                    <p>Ingresos por cliente: Promedio de $100 por cliente</p>
+                    <p>Comparación con informes anteriores: Incremento del 15% en comparación con el trimestre anterior.</p>
+                    <p>Análisis de rendimiento: Mayor contribución de ingresos proviene de las membresías.</p>
+                
+                        `;
+                mostrarReporte(reporte);
+            });
+
+            btnLimpiar.addEventListener('click', function () {
+                ocultarReporte();
+            });
+
+            btnRegresar.addEventListener('click', function () {
+                window.location.href = 'index_admin.html';
+            });
+        });
+    </script>
+</body>
+</html>

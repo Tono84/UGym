@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UGymModelStoreContainer" CdmEntityContainer="UGymEntities">
+    <EntitySetMapping Name="Administradores">
+      <EntityTypeMapping TypeName="UGymModel.Administradores">
+        <MappingFragment StoreEntitySet="Administradores">
+          <ScalarProperty Name="AdminId" ColumnName="AdminId" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+          <ScalarProperty Name="RolId" ColumnName="RolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Anuncios">
+      <EntityTypeMapping TypeName="UGymModel.Anuncios">
+        <MappingFragment StoreEntitySet="Anuncios">
+          <ScalarProperty Name="AnuncioId" ColumnName="AnuncioId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="MediaEnlace" ColumnName="MediaEnlace" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asistencia">
+      <EntityTypeMapping TypeName="UGymModel.Asistencia">
+        <MappingFragment StoreEntitySet="Asistencia">
+          <ScalarProperty Name="AsistenciaId" ColumnName="AsistenciaId" />
+          <ScalarProperty Name="FechaAsistencia" ColumnName="FechaAsistencia" />
+          <ScalarProperty Name="HoraAsistencia" ColumnName="HoraAsistencia" />
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clases">
+      <EntityTypeMapping TypeName="UGymModel.Clases">
+        <MappingFragment StoreEntitySet="Clases">
+          <ScalarProperty Name="ClaseId" ColumnName="ClaseId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodigoQR">
+      <EntityTypeMapping TypeName="UGymModel.CodigoQR">
+        <MappingFragment StoreEntitySet="CodigoQR">
+          <ScalarProperty Name="CodigoQRId" ColumnName="CodigoQRId" />
+          <ScalarProperty Name="EnlaceQR" ColumnName="EnlaceQR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactoEmergencia">
+      <EntityTypeMapping TypeName="UGymModel.ContactoEmergencia">
+        <MappingFragment StoreEntitySet="ContactoEmergencia">
+          <ScalarProperty Name="ContactoEmergenciaId" ColumnName="ContactoEmergenciaId" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ejercicios">
+      <EntityTypeMapping TypeName="UGymModel.Ejercicios">
+        <MappingFragment StoreEntitySet="Ejercicios">
+          <ScalarProperty Name="EjercicioId" ColumnName="EjercicioId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Video" ColumnName="Video" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleados">
+      <EntityTypeMapping TypeName="UGymModel.Empleados">
+        <MappingFragment StoreEntitySet="Empleados">
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+          <ScalarProperty Name="NumeroEmpleado" ColumnName="NumeroEmpleado" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="ContactoEmergenciaId" ColumnName="ContactoEmergenciaId" />
+          <ScalarProperty Name="RolId" ColumnName="RolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EntrenadoresClases">
+      <EntityTypeMapping TypeName="UGymModel.EntrenadoresClases">
+        <MappingFragment StoreEntitySet="EntrenadoresClases">
+          <ScalarProperty Name="ClaseId" ColumnName="ClaseId" />
+          <ScalarProperty Name="EntrenadorId" ColumnName="EntrenadorId" />
+          <ScalarProperty Name="Cupo" ColumnName="Cupo" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Hora" ColumnName="Hora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Espacios">
+      <EntityTypeMapping TypeName="UGymModel.Espacios">
+        <MappingFragment StoreEntitySet="Espacios">
+          <ScalarProperty Name="EspacioId" ColumnName="EspacioId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Expediente">
+      <EntityTypeMapping TypeName="UGymModel.Expediente">
+        <MappingFragment StoreEntitySet="Expediente">
+          <ScalarProperty Name="ExpedienteId" ColumnName="ExpedienteId" />
+          <ScalarProperty Name="CirugiasTipo" ColumnName="CirugiasTipo" />
+          <ScalarProperty Name="CirugiasCantidad" ColumnName="CirugiasCantidad" />
+          <ScalarProperty Name="CirugiasDetalle" ColumnName="CirugiasDetalle" />
+          <ScalarProperty Name="FarmacosTipo" ColumnName="FarmacosTipo" />
+          <ScalarProperty Name="FarmacosCantidad" ColumnName="FarmacosCantidad" />
+          <ScalarProperty Name="FarmacosAlergia" ColumnName="FarmacosAlergia" />
+          <ScalarProperty Name="EnfermedadCardiaca" ColumnName="EnfermedadCardiaca" />
+          <ScalarProperty Name="DoloresPecho" ColumnName="DoloresPecho" />
+          <ScalarProperty Name="HorasSentado" ColumnName="HorasSentado" />
+          <ScalarProperty Name="CicloSueño" ColumnName="CicloSueño" />
+          <ScalarProperty Name="EstresUltimoMes" ColumnName="EstresUltimoMes" />
+          <ScalarProperty Name="MotivacionEntrenar" ColumnName="MotivacionEntrenar" />
+          <ScalarProperty Name="DificuladPerderGrasa" ColumnName="DificuladPerderGrasa" />
+          <ScalarProperty Name="NivelEnergiaUltimoMes" ColumnName="NivelEnergiaUltimoMes" />
+          <ScalarProperty Name="PasosPorDia" ColumnName="PasosPorDia" />
+          <ScalarProperty Name="EjercicioTresMeses" ColumnName="EjercicioTresMeses" />
+          <ScalarProperty Name="MotivoAsistencia" ColumnName="MotivoAsistencia" />
+          <ScalarProperty Name="AutoRegulacion" ColumnName="AutoRegulacion" />
+          <ScalarProperty Name="Concentracion" ColumnName="Concentracion" />
+          <ScalarProperty Name="Alimentacion" ColumnName="Alimentacion" />
+          <ScalarProperty Name="AlimentacionEstres" ColumnName="AlimentacionEstres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InformesEvaluacion">
+      <EntityTypeMapping TypeName="UGymModel.InformesEvaluacion">
+        <MappingFragment StoreEntitySet="InformesEvaluacion">
+          <ScalarProperty Name="InformeEvaluacionId" ColumnName="InformeEvaluacionId" />
+          <ScalarProperty Name="EnlaceInformeEvaluacion" ColumnName="EnlaceInformeEvaluacion" />
+          <ScalarProperty Name="FechaCarga" ColumnName="FechaCarga" />
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InformesInbody">
+      <EntityTypeMapping TypeName="UGymModel.InformesInbody">
+        <MappingFragment StoreEntitySet="InformesInbody">
+          <ScalarProperty Name="InformeInbodyId" ColumnName="InformeInbodyId" />
+          <ScalarProperty Name="EnlaceInformeInbody" ColumnName="EnlaceInformeInbody" />
+          <ScalarProperty Name="FechaCarga" ColumnName="FechaCarga" />
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InformesTerapia">
+      <EntityTypeMapping TypeName="UGymModel.InformesTerapia">
+        <MappingFragment StoreEntitySet="InformesTerapia">
+          <ScalarProperty Name="InformeTerapiaId" ColumnName="InformeTerapiaId" />
+          <ScalarProperty Name="EnlaceInformeTerapia" ColumnName="EnlaceInformeTerapia" />
+          <ScalarProperty Name="FechaCarga" ColumnName="FechaCarga" />
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanAlimentacion">
+      <EntityTypeMapping TypeName="UGymModel.PlanAlimentacion">
+        <MappingFragment StoreEntitySet="PlanAlimentacion">
+          <ScalarProperty Name="PlanAlimenticioId" ColumnName="PlanAlimenticioId" />
+          <ScalarProperty Name="PlanAlimenticio" ColumnName="PlanAlimenticio" />
+          <ScalarProperty Name="FechaCarga" ColumnName="FechaCarga" />
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plantilla">
+      <EntityTypeMapping TypeName="UGymModel.Plantilla">
+        <MappingFragment StoreEntitySet="Plantilla">
+          <ScalarProperty Name="PlantillaId" ColumnName="PlantillaId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlantillasEjercicios">
+      <EntityTypeMapping TypeName="UGymModel.PlantillasEjercicios">
+        <MappingFragment StoreEntitySet="PlantillasEjercicios">
+          <ScalarProperty Name="PlantillaId" ColumnName="PlantillaId" />
+          <ScalarProperty Name="EjercicioId" ColumnName="EjercicioId" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Duracion" ColumnName="Duracion" />
+          <ScalarProperty Name="Series" ColumnName="Series" />
+          <ScalarProperty Name="Repeticiones" ColumnName="Repeticiones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reportes">
+      <EntityTypeMapping TypeName="UGymModel.Reportes">
+        <MappingFragment StoreEntitySet="Reportes">
+          <ScalarProperty Name="ReporteId" ColumnName="ReporteId" />
+          <ScalarProperty Name="NombreReporte" ColumnName="NombreReporte" />
+          <ScalarProperty Name="FechaGeneracion" ColumnName="FechaGeneracion" />
+          <ScalarProperty Name="TipoReporte" ColumnName="TipoReporte" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="DatosReporte" ColumnName="DatosReporte" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservas">
+      <EntityTypeMapping TypeName="UGymModel.Reservas">
+        <MappingFragment StoreEntitySet="Reservas">
+          <ScalarProperty Name="ReservaId" ColumnName="ReservaId" />
+          <ScalarProperty Name="FechaReserva" ColumnName="FechaReserva" />
+          <ScalarProperty Name="HoraReservaInicio" ColumnName="HoraReservaInicio" />
+          <ScalarProperty Name="HoraReservaFinal" ColumnName="HoraReservaFinal" />
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="EspacioId" ColumnName="EspacioId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="UGymModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RolesId" ColumnName="RolesId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rutinas">
+      <EntityTypeMapping TypeName="UGymModel.Rutinas">
+        <MappingFragment StoreEntitySet="Rutinas">
+          <ScalarProperty Name="RutinaId" ColumnName="RutinaId" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+          <ScalarProperty Name="Comentarios" ColumnName="Comentarios" />
+          <ScalarProperty Name="PlantillaId" ColumnName="PlantillaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RutinasEjercicios">
+      <EntityTypeMapping TypeName="UGymModel.RutinasEjercicios">
+        <MappingFragment StoreEntitySet="RutinasEjercicios">
+          <ScalarProperty Name="RutinaId" ColumnName="RutinaId" />
+          <ScalarProperty Name="EjericioId" ColumnName="EjericioId" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Duracion" ColumnName="Duracion" />
+          <ScalarProperty Name="Series" ColumnName="Series" />
+          <ScalarProperty Name="Repeticiones" ColumnName="Repeticiones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Socios">
+      <EntityTypeMapping TypeName="UGymModel.Socios">
+        <MappingFragment StoreEntitySet="Socios">
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="NumeroSocio" ColumnName="NumeroSocio" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Ocupacion" ColumnName="Ocupacion" />
+          <ScalarProperty Name="ConoceGym" ColumnName="ConoceGym" />
+          <ScalarProperty Name="Motivacion" ColumnName="Motivacion" />
+          <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="ContactoEmergenciaId" ColumnName="ContactoEmergenciaId" />
+          <ScalarProperty Name="ExpedienteId" ColumnName="ExpedienteId" />
+          <ScalarProperty Name="CodigoQRId" ColumnName="CodigoQRId" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+          <ScalarProperty Name="RolId" ColumnName="RolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SociosEntrenadoresClases">
+      <EntityTypeMapping TypeName="UGymModel.SociosEntrenadoresClases">
+        <MappingFragment StoreEntitySet="SociosEntrenadoresClases">
+          <ScalarProperty Name="ClasesId" ColumnName="ClasesId" />
+          <ScalarProperty Name="EntrenadorId" ColumnName="EntrenadorId" />
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SociosRutinasEjercicios">
+      <EntityTypeMapping TypeName="UGymModel.SociosRutinasEjercicios">
+        <MappingFragment StoreEntitySet="SociosRutinasEjercicios">
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="RutinaId" ColumnName="RutinaId" />
+          <ScalarProperty Name="EjericioId" ColumnName="EjericioId" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SociosTipoMembresias">
+      <EntityTypeMapping TypeName="UGymModel.SociosTipoMembresias">
+        <MappingFragment StoreEntitySet="SociosTipoMembresias">
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="TipoMembresiaId" ColumnName="TipoMembresiaId" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="FechaExpiracion" ColumnName="FechaExpiracion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SociosTipoPagos">
+      <EntityTypeMapping TypeName="UGymModel.SociosTipoPagos">
+        <MappingFragment StoreEntitySet="SociosTipoPagos">
+          <ScalarProperty Name="SocioId" ColumnName="SocioId" />
+          <ScalarProperty Name="PagoId" ColumnName="PagoId" />
+          <ScalarProperty Name="FechaPago" ColumnName="FechaPago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoMembresias">
+      <EntityTypeMapping TypeName="UGymModel.TipoMembresias">
+        <MappingFragment StoreEntitySet="TipoMembresias">
+          <ScalarProperty Name="TipoMembresiaId" ColumnName="TipoMembresiaId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPagos">
+      <EntityTypeMapping TypeName="UGymModel.TipoPagos">
+        <MappingFragment StoreEntitySet="TipoPagos">
+          <ScalarProperty Name="PagoId" ColumnName="PagoId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

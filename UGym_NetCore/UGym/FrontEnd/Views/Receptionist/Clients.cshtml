@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "Clientes";
+    Layout = "~/Views/Shared/_Receptionist_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Lista de Clientes</h2>
+    <div class="row">
+        <div class="col s12">
+            <form id="filtroForm">
+                <div class="input-field col s12 m4">
+                    <input id="filtroExpiracion" type="text" class="datepicker" placeholder="Fecha de Expiración">
+                </div>
+                <div class="input-field col s12 m4">
+                    <select id="filtroTipoMembresia">
+                        <option value="" disabled selected>Seleccione un Tipo de Membresía</option>
+                        <option value="Tipo 1">Tipo 1</option>
+                        <option value="Tipo 2">Tipo 2</option>
+                        <!-- Agregar más opciones de tipos de membresía aquí -->
+                    </select>
+                    <label>Filtrar por Tipo de Membresía</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <select id="filtroModalidadPago">
+                        <option value="" disabled selected>Seleccione una Modalidad de Pago</option>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
+                        <!-- Agregar más opciones de modalidades de pago aquí -->
+                    </select>
+                    <label>Filtrar por Modalidad de Pago</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <input id="filtroEstadoMembresia" type="text" class="validate" placeholder="Estado de Membresía">
+                </div>
+                <div class="input-field col s12 m4">
+                    <input id="filtroCorreo" type="email" class="validate" placeholder="Correo Electrónico">
+                </div>
+                <div class="col s12">
+                    <button class="btn waves-effect waves-light" id="aplicarFiltrosBtn" type="button">Filtrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>Número de Socio</th>
+                        <th>Nombre Completo</th>
+                        <th>Número Telefónico</th>
+                        <th>Correo Electrónico</th>
+                        <th>Fecha de Expiración</th>
+                        <th>Tipo de Membresía</th>
+                        <th>Modalidad de Pago</th>
+                        <th>Estado de Membresía</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12345</td>
+                        <td>Juan Pérez</td>
+                        <td>1234567890</td>
+                        <td>juan@example.com</td>
+                        <td>31/08/2023</td>
+                        <td>Tipo 1</td>
+                        <td>Efectivo</td>
+                        <td>Activo</td>
+                    </tr>
+                    <tr>
+                        <td>67890</td>
+                        <td>María González</td>
+                        <td>9876543210</td>
+                        <td>maria@example.com</td>
+                        <td>15/09/2023</td>
+                        <td>Tipo 2</td>
+                        <td>Tarjeta de Crédito</td>
+                        <td>Inactivo</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <br />
+    @Html.ActionLink("Regresar", "Index", "Receptionist", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        M.AutoInit(); // Inicializar componentes de Materialize
+
+        var aplicarFiltrosBtn = document.getElementById('aplicarFiltrosBtn');
+        var tablaClientes = document.querySelectorAll('tbody tr');
+
+        aplicarFiltrosBtn.addEventListener('click', function () {
+            var expiracion = document.getElementById('filtroExpiracion').value;
+            var tipoMembresia = document.getElementById('filtroTipoMembresia').value;
+            var modalidadPago = document.getElementById('filtroModalidadPago').value;
+            var estadoMembresia = document.getElementById('filtroEstadoMembresia').value.toLowerCase();
+            var correo = document.getElementById('filtroCorreo').value.toLowerCase();
+
+            tablaClientes.forEach(function (fila) {
+                var expiracionCell = fila.querySelector('td:nth-child(5)');
+                var tipoMembresiaCell = fila.querySelector('td:nth-child(6)');
+                var modalidadPagoCell = fila.querySelector('td:nth-child(7)');
+                var estadoMembresiaCell = fila.querySelector('td:nth-child(8)');
+                var correoCell = fila.querySelector('td:nth-child(4)');
+
+                var expiracionValue = expiracionCell.textContent.trim();
+                var tipoMembresiaValue = tipoMembresiaCell.textContent.trim();
+                var modalidadPagoValue = modalidadPagoCell.textContent.trim();
+                var estadoMembresiaValue = estadoMembresiaCell.textContent.trim().toLowerCase();
+                var correoValue = correoCell.textContent.trim().toLowerCase();
+
+                var expiracionMatch = expiracion === '' || expiracionValue === expiracion;
+                var tipoMembresiaMatch = tipoMembresia === '' || tipoMembresiaValue === tipoMembresia;
+                var modalidadPagoMatch = modalidadPago === '' || modalidadPagoValue === modalidadPago;
+                var estadoMembresiaMatch = estadoMembresia === '' || estadoMembresiaValue === estadoMembresia;
+                var correoMatch = correo === '' || correoValue.includes(correo);
+
+                if (expiracionMatch && tipoMembresiaMatch && modalidadPagoMatch && estadoMembresiaMatch && correoMatch) {
+                    fila.style.display = 'table-row';
+                } else {
+                    fila.style.display = 'none';
+                }
+            });
+        });
+
+ 
+
+    });
+</script>

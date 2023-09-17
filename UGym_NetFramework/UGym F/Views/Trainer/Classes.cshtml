@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Gestionar Clases";
+    Layout = "~/Views/Shared/_Trainer_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Gestionar Clases</h2>
+    <br />
+    <br />
+    <a href="#" class="btn waves-effect waves-light crear-btn">Crear</a>
+    <br />
+    <br />
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Instructor Asignado</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Clase 1</td>
+                <td>Instructor A</td>
+                <td>2023-08-20</td>
+                <td>10:00 AM</td>
+                <td>
+
+                    <a href="@Url.Action("ModifyClass", "Trainer") " class="btn waves-effect waves-light modificar-btn">Modificar</a>
+                    <a href="#" class="btn waves-effect waves-light borrar-btn" data-class-id="1">Borrar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Clase 2</td>
+                <td>Instructor B</td>
+                <td>2023-08-20</td>
+                <td>10:00 AM</td>
+                <td>
+
+                    <a href="@Url.Action("ModifyClass", "Trainer")" class="btn waves-effect waves-light modificar-btn">Modificar</a>
+                    <a href="#" class="btn waves-effect waves-light borrar-btn" data-class-id="1">Borrar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Clase 3</td>
+                <td>Instructor C</td>
+                <td>2023-08-20</td>
+                <td>10:00 AM</td>
+                <td>
+
+                    <a href="@Url.Action("ModifyClass", "Trainer") " class="btn waves-effect waves-light modificar-btn">Modificar</a>
+                    <a href="#" class="btn waves-effect waves-light borrar-btn" data-class-id="1">Borrar</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br />
+    <a href="@Url.Action("Index", "Trainer")" class="btn waves-effect waves-light">Regresar</a>
+</div>
+
+<!-- Aviso de Clase Cancelada -->
+<div id="aviso-cancelada" class="hide">
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <span class="white-text">Clase Cancelada</span>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.borrar-btn').click(function () {
+            var classId = $(this).data('class-id'); // Obtener el ID de la clase
+
+            // Aquí puedes realizar la lógica para borrar la clase con el ID classId
+            // ...
+
+            // Luego de borrar la clase, oculta la fila de la tabla correspondiente
+            $(this).closest('tr').hide();
+
+            // Muestra el aviso de "Clase Cancelada"
+            $('#aviso-cancelada').removeClass('hide');
+        });
+    });
+</script>

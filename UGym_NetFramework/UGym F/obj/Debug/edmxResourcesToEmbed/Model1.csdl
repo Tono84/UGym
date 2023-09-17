@@ -1,0 +1,1034 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UGymModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Administradores">
+    <Key>
+      <PropertyRef Name="AdminId" />
+    </Key>
+    <Property Name="AdminId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CorreoElectronico" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RolId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK_Administradores_Roles" FromRole="Administradores" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="Anuncios">
+    <Key>
+      <PropertyRef Name="AnuncioId" />
+    </Key>
+    <Property Name="AnuncioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MediaEnlace" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Anuncios_Empleados" FromRole="Anuncios" ToRole="Empleados" />
+  </EntityType>
+  <EntityType Name="Asistencia">
+    <Key>
+      <PropertyRef Name="AsistenciaId" />
+    </Key>
+    <Property Name="AsistenciaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaAsistencia" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="HoraAsistencia" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_Asistencia_Socios" FromRole="Asistencia" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="Clases">
+    <Key>
+      <PropertyRef Name="ClaseId" />
+    </Key>
+    <Property Name="ClaseId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="EntrenadoresClases" Relationship="Self.FK_EntrenadoresClases_Clases" FromRole="Clases" ToRole="EntrenadoresClases" />
+  </EntityType>
+  <EntityType Name="CodigoQR">
+    <Key>
+      <PropertyRef Name="CodigoQRId" />
+    </Key>
+    <Property Name="CodigoQRId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EnlaceQR" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_Socios_CodigoQR" FromRole="CodigoQR" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="ContactoEmergencia">
+    <Key>
+      <PropertyRef Name="ContactoEmergenciaId" />
+    </Key>
+    <Property Name="ContactoEmergenciaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Empleados_ContactoEmergencia" FromRole="ContactoEmergencia" ToRole="Empleados" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_Socios_ContactoEmergencia" FromRole="ContactoEmergencia" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="Ejercicios">
+    <Key>
+      <PropertyRef Name="EjercicioId" />
+    </Key>
+    <Property Name="EjercicioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Video" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="PlantillasEjercicios" Relationship="Self.FK_PlantillasEjercicios_Ejercicios" FromRole="Ejercicios" ToRole="PlantillasEjercicios" />
+    <NavigationProperty Name="RutinasEjercicios" Relationship="Self.FK_RutinasEjercicios_Ejercicios" FromRole="Ejercicios" ToRole="RutinasEjercicios" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="EmpleadoId" />
+    </Key>
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroEmpleado" Type="Int32" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Genero" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="CorreoElectronico" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="Int32" Nullable="false" />
+    <Property Name="ContactoEmergenciaId" Type="Int32" />
+    <Property Name="RolId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Anuncios" Relationship="Self.FK_Anuncios_Empleados" FromRole="Empleados" ToRole="Anuncios" />
+    <NavigationProperty Name="ContactoEmergencia" Relationship="Self.FK_Empleados_ContactoEmergencia" FromRole="Empleados" ToRole="ContactoEmergencia" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK_Empleados_Roles" FromRole="Empleados" ToRole="Roles" />
+    <NavigationProperty Name="EntrenadoresClases" Relationship="Self.FK_EntrenadoresClases_Empleados" FromRole="Empleados" ToRole="EntrenadoresClases" />
+    <NavigationProperty Name="InformesEvaluacion" Relationship="Self.FK_InformesEvaluacion_Empleados" FromRole="Empleados" ToRole="InformesEvaluacion" />
+    <NavigationProperty Name="InformesInbody" Relationship="Self.FK_InformesInbody_Empleados" FromRole="Empleados" ToRole="InformesInbody" />
+    <NavigationProperty Name="InformesTerapia" Relationship="Self.FK_InformesTerapia_Empleados" FromRole="Empleados" ToRole="InformesTerapia" />
+    <NavigationProperty Name="PlanAlimentacion" Relationship="Self.FK_PlanAlimentacion_Empleados" FromRole="Empleados" ToRole="PlanAlimentacion" />
+    <NavigationProperty Name="Reportes" Relationship="Self.FK_Reportes_Empleados" FromRole="Empleados" ToRole="Reportes" />
+    <NavigationProperty Name="Rutinas" Relationship="Self.FK_Rutinas_Empleados" FromRole="Empleados" ToRole="Rutinas" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_Socios_Empleados" FromRole="Empleados" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="EntrenadoresClases">
+    <Key>
+      <PropertyRef Name="ClaseId" />
+      <PropertyRef Name="EntrenadorId" />
+    </Key>
+    <Property Name="ClaseId" Type="Int32" Nullable="false" />
+    <Property Name="EntrenadorId" Type="Int32" Nullable="false" />
+    <Property Name="Cupo" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Hora" Type="Time" Nullable="false" Precision="7" />
+    <NavigationProperty Name="Clases" Relationship="Self.FK_EntrenadoresClases_Clases" FromRole="EntrenadoresClases" ToRole="Clases" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_EntrenadoresClases_Empleados" FromRole="EntrenadoresClases" ToRole="Empleados" />
+    <NavigationProperty Name="SociosEntrenadoresClases" Relationship="Self.FK_SociosEntrenadoresClases_Clases" FromRole="EntrenadoresClases" ToRole="SociosEntrenadoresClases" />
+  </EntityType>
+  <EntityType Name="Espacios">
+    <Key>
+      <PropertyRef Name="EspacioId" />
+    </Key>
+    <Property Name="EspacioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Reservas" Relationship="Self.FK_Reservas_Espacios" FromRole="Espacios" ToRole="Reservas" />
+  </EntityType>
+  <EntityType Name="Expediente">
+    <Key>
+      <PropertyRef Name="ExpedienteId" />
+    </Key>
+    <Property Name="ExpedienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CirugiasTipo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CirugiasCantidad" Type="Int32" Nullable="false" />
+    <Property Name="CirugiasDetalle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FarmacosTipo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FarmacosCantidad" Type="Int32" />
+    <Property Name="FarmacosAlergia" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EnfermedadCardiaca" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DoloresPecho" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HorasSentado" Type="Int32" />
+    <Property Name="CicloSueño" Type="Int32" />
+    <Property Name="EstresUltimoMes" Type="Int32" />
+    <Property Name="MotivacionEntrenar" Type="Int32" />
+    <Property Name="DificuladPerderGrasa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NivelEnergiaUltimoMes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PasosPorDia" Type="Int32" />
+    <Property Name="EjercicioTresMeses" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="MotivoAsistencia" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="AutoRegulacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Concentracion" Type="Int32" />
+    <Property Name="Alimentacion" Type="Int32" />
+    <Property Name="AlimentacionEstres" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_Socios_Expediente" FromRole="Expediente" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="InformesEvaluacion">
+    <Key>
+      <PropertyRef Name="InformeEvaluacionId" />
+    </Key>
+    <Property Name="InformeEvaluacionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EnlaceInformeEvaluacion" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaCarga" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_InformesEvaluacion_Empleados" FromRole="InformesEvaluacion" ToRole="Empleados" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_InformesEvaluacion_Socios" FromRole="InformesEvaluacion" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="InformesInbody">
+    <Key>
+      <PropertyRef Name="InformeInbodyId" />
+    </Key>
+    <Property Name="InformeInbodyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EnlaceInformeInbody" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaCarga" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_InformesInbody_Empleados" FromRole="InformesInbody" ToRole="Empleados" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_InformesInbody_Socios" FromRole="InformesInbody" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="InformesTerapia">
+    <Key>
+      <PropertyRef Name="InformeTerapiaId" />
+    </Key>
+    <Property Name="InformeTerapiaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EnlaceInformeTerapia" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaCarga" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_InformesTerapia_Empleados" FromRole="InformesTerapia" ToRole="Empleados" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_InformesTerapia_Socios" FromRole="InformesTerapia" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="PlanAlimentacion">
+    <Key>
+      <PropertyRef Name="PlanAlimenticioId" />
+    </Key>
+    <Property Name="PlanAlimenticioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PlanAlimenticio" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaCarga" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_PlanAlimentacion_Empleados" FromRole="PlanAlimentacion" ToRole="Empleados" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_PlanAlimentacion_Socios" FromRole="PlanAlimentacion" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="Plantilla">
+    <Key>
+      <PropertyRef Name="PlantillaId" />
+    </Key>
+    <Property Name="PlantillaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="PlantillasEjercicios" Relationship="Self.FK_PlantillasEjercicios_Plantilla" FromRole="Plantilla" ToRole="PlantillasEjercicios" />
+    <NavigationProperty Name="Rutinas" Relationship="Self.FK_Rutinas_Plantilla" FromRole="Plantilla" ToRole="Rutinas" />
+  </EntityType>
+  <EntityType Name="PlantillasEjercicios">
+    <Key>
+      <PropertyRef Name="PlantillaId" />
+      <PropertyRef Name="EjercicioId" />
+    </Key>
+    <Property Name="PlantillaId" Type="Int32" Nullable="false" />
+    <Property Name="EjercicioId" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Duracion" Type="Time" Precision="7" />
+    <Property Name="Series" Type="Int32" />
+    <Property Name="Repeticiones" Type="Int32" />
+    <NavigationProperty Name="Ejercicios" Relationship="Self.FK_PlantillasEjercicios_Ejercicios" FromRole="PlantillasEjercicios" ToRole="Ejercicios" />
+    <NavigationProperty Name="Plantilla" Relationship="Self.FK_PlantillasEjercicios_Plantilla" FromRole="PlantillasEjercicios" ToRole="Plantilla" />
+  </EntityType>
+  <EntityType Name="Reportes">
+    <Key>
+      <PropertyRef Name="ReporteId" />
+    </Key>
+    <Property Name="ReporteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreReporte" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaGeneracion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TipoReporte" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DatosReporte" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Reportes_Empleados" FromRole="Reportes" ToRole="Empleados" />
+  </EntityType>
+  <EntityType Name="Reservas">
+    <Key>
+      <PropertyRef Name="ReservaId" />
+    </Key>
+    <Property Name="ReservaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaReserva" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="HoraReservaInicio" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="HoraReservaFinal" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <Property Name="EspacioId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Espacios" Relationship="Self.FK_Reservas_Espacios" FromRole="Reservas" ToRole="Espacios" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_Reservas_Socios" FromRole="Reservas" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RolesId" />
+    </Key>
+    <Property Name="RolesId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Administradores" Relationship="Self.FK_Administradores_Roles" FromRole="Roles" ToRole="Administradores" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Empleados_Roles" FromRole="Roles" ToRole="Empleados" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_Socios_Roles" FromRole="Roles" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="Rutinas">
+    <Key>
+      <PropertyRef Name="RutinaId" />
+    </Key>
+    <Property Name="RutinaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="EmpleadoId" Type="Int32" Nullable="false" />
+    <Property Name="Comentarios" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="PlantillaId" Type="Int32" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Rutinas_Empleados" FromRole="Rutinas" ToRole="Empleados" />
+    <NavigationProperty Name="Plantilla" Relationship="Self.FK_Rutinas_Plantilla" FromRole="Rutinas" ToRole="Plantilla" />
+    <NavigationProperty Name="RutinasEjercicios" Relationship="Self.FK_RutinasEjercicios_Rutinas" FromRole="Rutinas" ToRole="RutinasEjercicios" />
+  </EntityType>
+  <EntityType Name="RutinasEjercicios">
+    <Key>
+      <PropertyRef Name="RutinaId" />
+      <PropertyRef Name="EjericioId" />
+    </Key>
+    <Property Name="RutinaId" Type="Int32" Nullable="false" />
+    <Property Name="EjericioId" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Duracion" Type="Time" Precision="7" />
+    <Property Name="Series" Type="Int32" />
+    <Property Name="Repeticiones" Type="Int32" />
+    <NavigationProperty Name="Ejercicios" Relationship="Self.FK_RutinasEjercicios_Ejercicios" FromRole="RutinasEjercicios" ToRole="Ejercicios" />
+    <NavigationProperty Name="Rutinas" Relationship="Self.FK_RutinasEjercicios_Rutinas" FromRole="RutinasEjercicios" ToRole="Rutinas" />
+    <NavigationProperty Name="SociosRutinasEjercicios" Relationship="Self.FK__SociosRutinasEje__6EF57B66" FromRole="RutinasEjercicios" ToRole="SociosRutinasEjercicios" />
+  </EntityType>
+  <EntityType Name="Socios">
+    <Key>
+      <PropertyRef Name="SocioId" />
+    </Key>
+    <Property Name="SocioId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroSocio" Type="Int32" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NombreCompleto" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Genero" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Cedula" Type="Int32" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Ocupacion" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ConoceGym" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Motivacion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CorreoElectronico" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContactoEmergenciaId" Type="Int32" Nullable="false" />
+    <Property Name="ExpedienteId" Type="Int32" />
+    <Property Name="CodigoQRId" Type="Int32" />
+    <Property Name="EmpleadoId" Type="Int32" />
+    <Property Name="RolId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Asistencia" Relationship="Self.FK_Asistencia_Socios" FromRole="Socios" ToRole="Asistencia" />
+    <NavigationProperty Name="CodigoQR" Relationship="Self.FK_Socios_CodigoQR" FromRole="Socios" ToRole="CodigoQR" />
+    <NavigationProperty Name="ContactoEmergencia" Relationship="Self.FK_Socios_ContactoEmergencia" FromRole="Socios" ToRole="ContactoEmergencia" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Socios_Empleados" FromRole="Socios" ToRole="Empleados" />
+    <NavigationProperty Name="Expediente" Relationship="Self.FK_Socios_Expediente" FromRole="Socios" ToRole="Expediente" />
+    <NavigationProperty Name="InformesEvaluacion" Relationship="Self.FK_InformesEvaluacion_Socios" FromRole="Socios" ToRole="InformesEvaluacion" />
+    <NavigationProperty Name="InformesInbody" Relationship="Self.FK_InformesInbody_Socios" FromRole="Socios" ToRole="InformesInbody" />
+    <NavigationProperty Name="InformesTerapia" Relationship="Self.FK_InformesTerapia_Socios" FromRole="Socios" ToRole="InformesTerapia" />
+    <NavigationProperty Name="PlanAlimentacion" Relationship="Self.FK_PlanAlimentacion_Socios" FromRole="Socios" ToRole="PlanAlimentacion" />
+    <NavigationProperty Name="Reservas" Relationship="Self.FK_Reservas_Socios" FromRole="Socios" ToRole="Reservas" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK_Socios_Roles" FromRole="Socios" ToRole="Roles" />
+    <NavigationProperty Name="SociosRutinasEjercicios" Relationship="Self.FK__SociosRut__Socio__6E01572D" FromRole="Socios" ToRole="SociosRutinasEjercicios" />
+    <NavigationProperty Name="SociosEntrenadoresClases" Relationship="Self.FK_SociosEntrenadoresClases_Socios" FromRole="Socios" ToRole="SociosEntrenadoresClases" />
+    <NavigationProperty Name="SociosRutinasEjercicios1" Relationship="Self.FK_SociosRutinasEjercicios_Socios" FromRole="Socios" ToRole="SociosRutinasEjercicios" />
+    <NavigationProperty Name="SociosTipoMembresias" Relationship="Self.FK_SociosTipoMembresias_Socios" FromRole="Socios" ToRole="SociosTipoMembresias" />
+    <NavigationProperty Name="SociosTipoPagos" Relationship="Self.FK_SociosTipoPagos_Socios" FromRole="Socios" ToRole="SociosTipoPagos" />
+  </EntityType>
+  <EntityType Name="SociosEntrenadoresClases">
+    <Key>
+      <PropertyRef Name="ClasesId" />
+      <PropertyRef Name="EntrenadorId" />
+      <PropertyRef Name="SocioId" />
+    </Key>
+    <Property Name="ClasesId" Type="Int32" Nullable="false" />
+    <Property Name="EntrenadorId" Type="Int32" Nullable="false" />
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="EntrenadoresClases" Relationship="Self.FK_SociosEntrenadoresClases_Clases" FromRole="SociosEntrenadoresClases" ToRole="EntrenadoresClases" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_SociosEntrenadoresClases_Socios" FromRole="SociosEntrenadoresClases" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="SociosRutinasEjercicios">
+    <Key>
+      <PropertyRef Name="SocioId" />
+      <PropertyRef Name="RutinaId" />
+      <PropertyRef Name="EjericioId" />
+    </Key>
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <Property Name="RutinaId" Type="Int32" Nullable="false" />
+    <Property Name="EjericioId" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="RutinasEjercicios" Relationship="Self.FK__SociosRutinasEje__6EF57B66" FromRole="SociosRutinasEjercicios" ToRole="RutinasEjercicios" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK__SociosRut__Socio__6E01572D" FromRole="SociosRutinasEjercicios" ToRole="Socios" />
+    <NavigationProperty Name="Socios1" Relationship="Self.FK_SociosRutinasEjercicios_Socios" FromRole="SociosRutinasEjercicios" ToRole="Socios" />
+  </EntityType>
+  <EntityType Name="SociosTipoMembresias">
+    <Key>
+      <PropertyRef Name="SocioId" />
+      <PropertyRef Name="TipoMembresiaId" />
+    </Key>
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <Property Name="TipoMembresiaId" Type="Int32" Nullable="false" />
+    <Property Name="FechaInicio" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FechaExpiracion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_SociosTipoMembresias_Socios" FromRole="SociosTipoMembresias" ToRole="Socios" />
+    <NavigationProperty Name="TipoMembresias" Relationship="Self.FK_SociosTipoMembresias_TipoMembresias" FromRole="SociosTipoMembresias" ToRole="TipoMembresias" />
+  </EntityType>
+  <EntityType Name="SociosTipoPagos">
+    <Key>
+      <PropertyRef Name="SocioId" />
+      <PropertyRef Name="PagoId" />
+    </Key>
+    <Property Name="SocioId" Type="Int32" Nullable="false" />
+    <Property Name="PagoId" Type="Int32" Nullable="false" />
+    <Property Name="FechaPago" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Socios" Relationship="Self.FK_SociosTipoPagos_Socios" FromRole="SociosTipoPagos" ToRole="Socios" />
+    <NavigationProperty Name="TipoPagos" Relationship="Self.FK_SociosTipoPagos_TipoPagos" FromRole="SociosTipoPagos" ToRole="TipoPagos" />
+  </EntityType>
+  <EntityType Name="TipoMembresias">
+    <Key>
+      <PropertyRef Name="TipoMembresiaId" />
+    </Key>
+    <Property Name="TipoMembresiaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SociosTipoMembresias" Relationship="Self.FK_SociosTipoMembresias_TipoMembresias" FromRole="TipoMembresias" ToRole="SociosTipoMembresias" />
+  </EntityType>
+  <EntityType Name="TipoPagos">
+    <Key>
+      <PropertyRef Name="PagoId" />
+    </Key>
+    <Property Name="PagoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Monto" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="SociosTipoPagos" Relationship="Self.FK_SociosTipoPagos_TipoPagos" FromRole="TipoPagos" ToRole="SociosTipoPagos" />
+  </EntityType>
+  <Association Name="FK_Administradores_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Administradores" Type="Self.Administradores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RolesId" />
+      </Principal>
+      <Dependent Role="Administradores">
+        <PropertyRef Name="RolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Anuncios_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="Anuncios" Type="Self.Anuncios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="Anuncios">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Asistencia_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="Asistencia">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EntrenadoresClases_Clases">
+    <End Role="Clases" Type="Self.Clases" Multiplicity="1" />
+    <End Role="EntrenadoresClases" Type="Self.EntrenadoresClases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clases">
+        <PropertyRef Name="ClaseId" />
+      </Principal>
+      <Dependent Role="EntrenadoresClases">
+        <PropertyRef Name="ClaseId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Socios_CodigoQR">
+    <End Role="CodigoQR" Type="Self.CodigoQR" Multiplicity="0..1" />
+    <End Role="Socios" Type="Self.Socios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CodigoQR">
+        <PropertyRef Name="CodigoQRId" />
+      </Principal>
+      <Dependent Role="Socios">
+        <PropertyRef Name="CodigoQRId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleados_ContactoEmergencia">
+    <End Role="ContactoEmergencia" Type="Self.ContactoEmergencia" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactoEmergencia">
+        <PropertyRef Name="ContactoEmergenciaId" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="ContactoEmergenciaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Socios_ContactoEmergencia">
+    <End Role="ContactoEmergencia" Type="Self.ContactoEmergencia" Multiplicity="1" />
+    <End Role="Socios" Type="Self.Socios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactoEmergencia">
+        <PropertyRef Name="ContactoEmergenciaId" />
+      </Principal>
+      <Dependent Role="Socios">
+        <PropertyRef Name="ContactoEmergenciaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlantillasEjercicios_Ejercicios">
+    <End Role="Ejercicios" Type="Self.Ejercicios" Multiplicity="1" />
+    <End Role="PlantillasEjercicios" Type="Self.PlantillasEjercicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ejercicios">
+        <PropertyRef Name="EjercicioId" />
+      </Principal>
+      <Dependent Role="PlantillasEjercicios">
+        <PropertyRef Name="EjercicioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RutinasEjercicios_Ejercicios">
+    <End Role="Ejercicios" Type="Self.Ejercicios" Multiplicity="1" />
+    <End Role="RutinasEjercicios" Type="Self.RutinasEjercicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ejercicios">
+        <PropertyRef Name="EjercicioId" />
+      </Principal>
+      <Dependent Role="RutinasEjercicios">
+        <PropertyRef Name="EjericioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleados_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RolesId" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="RolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EntrenadoresClases_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="EntrenadoresClases" Type="Self.EntrenadoresClases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="EntrenadoresClases">
+        <PropertyRef Name="EntrenadorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformesEvaluacion_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="InformesEvaluacion" Type="Self.InformesEvaluacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="InformesEvaluacion">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformesInbody_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="InformesInbody" Type="Self.InformesInbody" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="InformesInbody">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformesTerapia_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="InformesTerapia" Type="Self.InformesTerapia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="InformesTerapia">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanAlimentacion_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="PlanAlimentacion" Type="Self.PlanAlimentacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="PlanAlimentacion">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reportes_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="Reportes" Type="Self.Reportes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="Reportes">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rutinas_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="Rutinas" Type="Self.Rutinas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="Rutinas">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Socios_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="Socios" Type="Self.Socios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="Socios">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SociosEntrenadoresClases_Clases">
+    <End Role="EntrenadoresClases" Type="Self.EntrenadoresClases" Multiplicity="1" />
+    <End Role="SociosEntrenadoresClases" Type="Self.SociosEntrenadoresClases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EntrenadoresClases">
+        <PropertyRef Name="ClaseId" />
+        <PropertyRef Name="EntrenadorId" />
+      </Principal>
+      <Dependent Role="SociosEntrenadoresClases">
+        <PropertyRef Name="EntrenadorId" />
+        <PropertyRef Name="ClasesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservas_Espacios">
+    <End Role="Espacios" Type="Self.Espacios" Multiplicity="1" />
+    <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Espacios">
+        <PropertyRef Name="EspacioId" />
+      </Principal>
+      <Dependent Role="Reservas">
+        <PropertyRef Name="EspacioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Socios_Expediente">
+    <End Role="Expediente" Type="Self.Expediente" Multiplicity="0..1" />
+    <End Role="Socios" Type="Self.Socios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Expediente">
+        <PropertyRef Name="ExpedienteId" />
+      </Principal>
+      <Dependent Role="Socios">
+        <PropertyRef Name="ExpedienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformesEvaluacion_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="InformesEvaluacion" Type="Self.InformesEvaluacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="InformesEvaluacion">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformesInbody_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="InformesInbody" Type="Self.InformesInbody" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="InformesInbody">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformesTerapia_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="InformesTerapia" Type="Self.InformesTerapia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="InformesTerapia">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanAlimentacion_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="PlanAlimentacion" Type="Self.PlanAlimentacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="PlanAlimentacion">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlantillasEjercicios_Plantilla">
+    <End Role="Plantilla" Type="Self.Plantilla" Multiplicity="1" />
+    <End Role="PlantillasEjercicios" Type="Self.PlantillasEjercicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plantilla">
+        <PropertyRef Name="PlantillaId" />
+      </Principal>
+      <Dependent Role="PlantillasEjercicios">
+        <PropertyRef Name="PlantillaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rutinas_Plantilla">
+    <End Role="Plantilla" Type="Self.Plantilla" Multiplicity="0..1" />
+    <End Role="Rutinas" Type="Self.Rutinas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plantilla">
+        <PropertyRef Name="PlantillaId" />
+      </Principal>
+      <Dependent Role="Rutinas">
+        <PropertyRef Name="PlantillaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reservas_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="Reservas">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Socios_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Socios" Type="Self.Socios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RolesId" />
+      </Principal>
+      <Dependent Role="Socios">
+        <PropertyRef Name="RolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RutinasEjercicios_Rutinas">
+    <End Role="Rutinas" Type="Self.Rutinas" Multiplicity="1" />
+    <End Role="RutinasEjercicios" Type="Self.RutinasEjercicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rutinas">
+        <PropertyRef Name="RutinaId" />
+      </Principal>
+      <Dependent Role="RutinasEjercicios">
+        <PropertyRef Name="RutinaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SociosRutinasEje__6EF57B66">
+    <End Role="RutinasEjercicios" Type="Self.RutinasEjercicios" Multiplicity="1" />
+    <End Role="SociosRutinasEjercicios" Type="Self.SociosRutinasEjercicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RutinasEjercicios">
+        <PropertyRef Name="RutinaId" />
+        <PropertyRef Name="EjericioId" />
+      </Principal>
+      <Dependent Role="SociosRutinasEjercicios">
+        <PropertyRef Name="RutinaId" />
+        <PropertyRef Name="EjericioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__SociosRut__Socio__6E01572D">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="SociosRutinasEjercicios" Type="Self.SociosRutinasEjercicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="SociosRutinasEjercicios">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SociosEntrenadoresClases_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="SociosEntrenadoresClases" Type="Self.SociosEntrenadoresClases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="SociosEntrenadoresClases">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SociosRutinasEjercicios_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="SociosRutinasEjercicios" Type="Self.SociosRutinasEjercicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="SociosRutinasEjercicios">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SociosTipoMembresias_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="SociosTipoMembresias" Type="Self.SociosTipoMembresias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="SociosTipoMembresias">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SociosTipoPagos_Socios">
+    <End Role="Socios" Type="Self.Socios" Multiplicity="1" />
+    <End Role="SociosTipoPagos" Type="Self.SociosTipoPagos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Socios">
+        <PropertyRef Name="SocioId" />
+      </Principal>
+      <Dependent Role="SociosTipoPagos">
+        <PropertyRef Name="SocioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SociosTipoMembresias_TipoMembresias">
+    <End Role="TipoMembresias" Type="Self.TipoMembresias" Multiplicity="1" />
+    <End Role="SociosTipoMembresias" Type="Self.SociosTipoMembresias" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoMembresias">
+        <PropertyRef Name="TipoMembresiaId" />
+      </Principal>
+      <Dependent Role="SociosTipoMembresias">
+        <PropertyRef Name="TipoMembresiaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SociosTipoPagos_TipoPagos">
+    <End Role="TipoPagos" Type="Self.TipoPagos" Multiplicity="1" />
+    <End Role="SociosTipoPagos" Type="Self.SociosTipoPagos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoPagos">
+        <PropertyRef Name="PagoId" />
+      </Principal>
+      <Dependent Role="SociosTipoPagos">
+        <PropertyRef Name="PagoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UGymEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Administradores" EntityType="Self.Administradores" />
+    <EntitySet Name="Anuncios" EntityType="Self.Anuncios" />
+    <EntitySet Name="Asistencia" EntityType="Self.Asistencia" />
+    <EntitySet Name="Clases" EntityType="Self.Clases" />
+    <EntitySet Name="CodigoQR" EntityType="Self.CodigoQR" />
+    <EntitySet Name="ContactoEmergencia" EntityType="Self.ContactoEmergencia" />
+    <EntitySet Name="Ejercicios" EntityType="Self.Ejercicios" />
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" />
+    <EntitySet Name="EntrenadoresClases" EntityType="Self.EntrenadoresClases" />
+    <EntitySet Name="Espacios" EntityType="Self.Espacios" />
+    <EntitySet Name="Expediente" EntityType="Self.Expediente" />
+    <EntitySet Name="InformesEvaluacion" EntityType="Self.InformesEvaluacion" />
+    <EntitySet Name="InformesInbody" EntityType="Self.InformesInbody" />
+    <EntitySet Name="InformesTerapia" EntityType="Self.InformesTerapia" />
+    <EntitySet Name="PlanAlimentacion" EntityType="Self.PlanAlimentacion" />
+    <EntitySet Name="Plantilla" EntityType="Self.Plantilla" />
+    <EntitySet Name="PlantillasEjercicios" EntityType="Self.PlantillasEjercicios" />
+    <EntitySet Name="Reportes" EntityType="Self.Reportes" />
+    <EntitySet Name="Reservas" EntityType="Self.Reservas" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="Rutinas" EntityType="Self.Rutinas" />
+    <EntitySet Name="RutinasEjercicios" EntityType="Self.RutinasEjercicios" />
+    <EntitySet Name="Socios" EntityType="Self.Socios" />
+    <EntitySet Name="SociosEntrenadoresClases" EntityType="Self.SociosEntrenadoresClases" />
+    <EntitySet Name="SociosRutinasEjercicios" EntityType="Self.SociosRutinasEjercicios" />
+    <EntitySet Name="SociosTipoMembresias" EntityType="Self.SociosTipoMembresias" />
+    <EntitySet Name="SociosTipoPagos" EntityType="Self.SociosTipoPagos" />
+    <EntitySet Name="TipoMembresias" EntityType="Self.TipoMembresias" />
+    <EntitySet Name="TipoPagos" EntityType="Self.TipoPagos" />
+    <AssociationSet Name="FK_Administradores_Roles" Association="Self.FK_Administradores_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Administradores" EntitySet="Administradores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Anuncios_Empleados" Association="Self.FK_Anuncios_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Anuncios" EntitySet="Anuncios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Asistencia_Socios" Association="Self.FK_Asistencia_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="Asistencia" EntitySet="Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EntrenadoresClases_Clases" Association="Self.FK_EntrenadoresClases_Clases">
+      <End Role="Clases" EntitySet="Clases" />
+      <End Role="EntrenadoresClases" EntitySet="EntrenadoresClases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Socios_CodigoQR" Association="Self.FK_Socios_CodigoQR">
+      <End Role="CodigoQR" EntitySet="CodigoQR" />
+      <End Role="Socios" EntitySet="Socios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleados_ContactoEmergencia" Association="Self.FK_Empleados_ContactoEmergencia">
+      <End Role="ContactoEmergencia" EntitySet="ContactoEmergencia" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Socios_ContactoEmergencia" Association="Self.FK_Socios_ContactoEmergencia">
+      <End Role="ContactoEmergencia" EntitySet="ContactoEmergencia" />
+      <End Role="Socios" EntitySet="Socios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlantillasEjercicios_Ejercicios" Association="Self.FK_PlantillasEjercicios_Ejercicios">
+      <End Role="Ejercicios" EntitySet="Ejercicios" />
+      <End Role="PlantillasEjercicios" EntitySet="PlantillasEjercicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RutinasEjercicios_Ejercicios" Association="Self.FK_RutinasEjercicios_Ejercicios">
+      <End Role="Ejercicios" EntitySet="Ejercicios" />
+      <End Role="RutinasEjercicios" EntitySet="RutinasEjercicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleados_Roles" Association="Self.FK_Empleados_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EntrenadoresClases_Empleados" Association="Self.FK_EntrenadoresClases_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="EntrenadoresClases" EntitySet="EntrenadoresClases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformesEvaluacion_Empleados" Association="Self.FK_InformesEvaluacion_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="InformesEvaluacion" EntitySet="InformesEvaluacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformesInbody_Empleados" Association="Self.FK_InformesInbody_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="InformesInbody" EntitySet="InformesInbody" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformesTerapia_Empleados" Association="Self.FK_InformesTerapia_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="InformesTerapia" EntitySet="InformesTerapia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanAlimentacion_Empleados" Association="Self.FK_PlanAlimentacion_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="PlanAlimentacion" EntitySet="PlanAlimentacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reportes_Empleados" Association="Self.FK_Reportes_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Reportes" EntitySet="Reportes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rutinas_Empleados" Association="Self.FK_Rutinas_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Rutinas" EntitySet="Rutinas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Socios_Empleados" Association="Self.FK_Socios_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Socios" EntitySet="Socios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SociosEntrenadoresClases_Clases" Association="Self.FK_SociosEntrenadoresClases_Clases">
+      <End Role="EntrenadoresClases" EntitySet="EntrenadoresClases" />
+      <End Role="SociosEntrenadoresClases" EntitySet="SociosEntrenadoresClases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservas_Espacios" Association="Self.FK_Reservas_Espacios">
+      <End Role="Espacios" EntitySet="Espacios" />
+      <End Role="Reservas" EntitySet="Reservas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Socios_Expediente" Association="Self.FK_Socios_Expediente">
+      <End Role="Expediente" EntitySet="Expediente" />
+      <End Role="Socios" EntitySet="Socios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformesEvaluacion_Socios" Association="Self.FK_InformesEvaluacion_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="InformesEvaluacion" EntitySet="InformesEvaluacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformesInbody_Socios" Association="Self.FK_InformesInbody_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="InformesInbody" EntitySet="InformesInbody" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformesTerapia_Socios" Association="Self.FK_InformesTerapia_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="InformesTerapia" EntitySet="InformesTerapia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanAlimentacion_Socios" Association="Self.FK_PlanAlimentacion_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="PlanAlimentacion" EntitySet="PlanAlimentacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlantillasEjercicios_Plantilla" Association="Self.FK_PlantillasEjercicios_Plantilla">
+      <End Role="Plantilla" EntitySet="Plantilla" />
+      <End Role="PlantillasEjercicios" EntitySet="PlantillasEjercicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rutinas_Plantilla" Association="Self.FK_Rutinas_Plantilla">
+      <End Role="Plantilla" EntitySet="Plantilla" />
+      <End Role="Rutinas" EntitySet="Rutinas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reservas_Socios" Association="Self.FK_Reservas_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="Reservas" EntitySet="Reservas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Socios_Roles" Association="Self.FK_Socios_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Socios" EntitySet="Socios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RutinasEjercicios_Rutinas" Association="Self.FK_RutinasEjercicios_Rutinas">
+      <End Role="Rutinas" EntitySet="Rutinas" />
+      <End Role="RutinasEjercicios" EntitySet="RutinasEjercicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SociosRutinasEje__6EF57B66" Association="Self.FK__SociosRutinasEje__6EF57B66">
+      <End Role="RutinasEjercicios" EntitySet="RutinasEjercicios" />
+      <End Role="SociosRutinasEjercicios" EntitySet="SociosRutinasEjercicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__SociosRut__Socio__6E01572D" Association="Self.FK__SociosRut__Socio__6E01572D">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="SociosRutinasEjercicios" EntitySet="SociosRutinasEjercicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SociosEntrenadoresClases_Socios" Association="Self.FK_SociosEntrenadoresClases_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="SociosEntrenadoresClases" EntitySet="SociosEntrenadoresClases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SociosRutinasEjercicios_Socios" Association="Self.FK_SociosRutinasEjercicios_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="SociosRutinasEjercicios" EntitySet="SociosRutinasEjercicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SociosTipoMembresias_Socios" Association="Self.FK_SociosTipoMembresias_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="SociosTipoMembresias" EntitySet="SociosTipoMembresias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SociosTipoPagos_Socios" Association="Self.FK_SociosTipoPagos_Socios">
+      <End Role="Socios" EntitySet="Socios" />
+      <End Role="SociosTipoPagos" EntitySet="SociosTipoPagos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SociosTipoMembresias_TipoMembresias" Association="Self.FK_SociosTipoMembresias_TipoMembresias">
+      <End Role="TipoMembresias" EntitySet="TipoMembresias" />
+      <End Role="SociosTipoMembresias" EntitySet="SociosTipoMembresias" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SociosTipoPagos_TipoPagos" Association="Self.FK_SociosTipoPagos_TipoPagos">
+      <End Role="TipoPagos" EntitySet="TipoPagos" />
+      <End Role="SociosTipoPagos" EntitySet="SociosTipoPagos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
