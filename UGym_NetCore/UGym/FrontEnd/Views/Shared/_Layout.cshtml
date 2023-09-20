@@ -21,7 +21,20 @@
     <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+    <style>
+        .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+            display: initial;
+            flex-wrap: inherit;
+            align-items: initial;
+            justify-content: flex-start;
+        }
 
+        /* Estilo para los elementos de navegación */
+        .navbar-nav {
+            display: initial;
+            align-items: flex-end;
+        }
+    </style>
 </head>
 <body>
     <div id="wrapper" class="home-page">
@@ -39,14 +52,14 @@
                             <img src="~/Content/img/U Wellness Center Phone Banner Web.png" alt="Logo">
                         </a>
                     </div>
-                    <div class="navbar-collapse collapse ">
+                    <div class="navbar-collapse collapse text-center">
                         <ul class="nav navbar-nav">
                             <li class="active">
                   
                                 @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class ="waves-effect waves-dark" })
                                 </li>
                             <li class="dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">Información <b class="caret"></b></a>
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">Información</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="waves-effect waves-dark" asp-area="" asp-controller="Home" asp-action="Index">Equipo</a></li>
                                     <li><a class="waves-effect waves-dark" asp-area="" asp-controller="Home" asp-action="Index">Noticias</a></li>
