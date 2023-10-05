@@ -1,0 +1,41 @@
+﻿@model IEnumerable<FrontEnd.Models.QRCodeViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.QrcodeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LinkQr)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.QrcodeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LinkQr)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.QrcodeId }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.QrcodeId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.QrcodeId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
