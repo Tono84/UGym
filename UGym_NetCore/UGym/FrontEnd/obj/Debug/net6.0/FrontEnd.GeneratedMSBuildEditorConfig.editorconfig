@@ -9,281 +9,281 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FrontEnd
 build_property.RootNamespace = FrontEnd
-build_property.ProjectDir = C:\Users\serra\Source\Repos\UGym\UGym_NetCore\UGym\FrontEnd\
+build_property.ProjectDir = C:\Users\joses\OneDrive\Documentos\source\repos\Tono84\UGym\UGym_NetCore\UGym\FrontEnd\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\serra\Source\Repos\UGym\UGym_NetCore\UGym\FrontEnd
+build_property.MSBuildProjectDirectory = C:\Users\joses\OneDrive\Documentos\source\repos\Tono84\UGym\UGym_NetCore\UGym\FrontEnd
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/Evaluation.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/Evaluation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFdmFsdWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/Login.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/MedicalHistory.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/MedicalHistory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNZWRpY2FsSGlzdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/QRCode.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/QRCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxRUkNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/Register.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Clients.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Clients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2xpZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Index.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Profile.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Reports.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Staff.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Staff.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhZmYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Users.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Admin/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Classes.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Classes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDbGFzc2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Inbody.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Inbody.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmJvZHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Index.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Membership.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Membership.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxNZW1iZXJzaGlwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/MyRoutine.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/MyRoutine.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxNeVJvdXRpbmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Payment.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Payment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Plan.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Plan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxQbGFuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Profile.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Records.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Records.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxSZWNvcmRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Reports.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxSZXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Reservations.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Reservations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxSZXNlcnZhdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Routines.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Cliente/Routines.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxSb3V0aW5lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/About.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/AboutOld.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/AboutOld.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dE9sZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/Contact.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/ContactOld.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/ContactOld.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0T2xkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/Index.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/IndexOld.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/IndexOld.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleE9sZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/PrivacyOld.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Home/PrivacyOld.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5T2xkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Nutritionist/Clients.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Nutritionist/Clients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnV0cml0aW9uaXN0XENsaWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Nutritionist/Index.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Nutritionist/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnV0cml0aW9uaXN0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Nutritionist/Profile.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Nutritionist/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnV0cml0aW9uaXN0XFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Nutritionist/Reports.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Nutritionist/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTnV0cml0aW9uaXN0XFJlcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Create.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUVJDb2RlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Delete.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUVJDb2RlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Details.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUVJDb2RlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Edit.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUVJDb2RlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Index.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/QRCode/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUVJDb2RlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Receptionist/Ads.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Receptionist/Ads.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0XEFkcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Receptionist/Clients.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Receptionist/Clients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0XENsaWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Receptionist/Index.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Receptionist/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Receptionist/Profile.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Receptionist/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0XFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/Error.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Admin_layout.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Admin_layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbl9sYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Client_layout.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Client_layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DbGllbnRfbGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Nutritionist_layout.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Nutritionist_layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OdXRyaXRpb25pc3RfbGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Receptionist_layout.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Receptionist_layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWNlcHRpb25pc3RfbGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Therapist_layout.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Therapist_layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UaGVyYXBpc3RfbGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Trainer_layout.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Trainer_layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UcmFpbmVyX2xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Therapist/Clients.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Therapist/Clients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlcmFwaXN0XENsaWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Therapist/Index.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Therapist/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlcmFwaXN0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Therapist/Profile.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Therapist/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlcmFwaXN0XFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Therapist/Reports.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Therapist/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlcmFwaXN0XFJlcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Classes.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Classes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxDbGFzc2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Clients.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Clients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxDbGllbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Drafts.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Drafts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxEcmFmdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Evaluations.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Evaluations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxFdmFsdWF0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Gestion.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Gestion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxHZXN0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Index.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/ModifyClass.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/ModifyClass.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxNb2RpZnlDbGFzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Profile.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Routines.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Trainer/Routines.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxSb3V0aW5lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/_ViewImports.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/_ViewStart.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Layout.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-709v5g0hbe
 
-[C:/Users/serra/Source/Repos/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_LayoutOld.cshtml]
+[C:/Users/joses/OneDrive/Documentos/source/repos/Tono84/UGym/UGym_NetCore/UGym/FrontEnd/Views/Shared/_LayoutOld.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRPbGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dyt2gol292

@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\UGym_NetCore",
+    "\\UGym_NetCore\\UGym",
+    "\\UGym_NetCore\\UGym\\FrontEnd",
+    "\\UGym_NetCore\\UGym\\FrontEnd\\Views",
+    "\\UGym_NetCore\\UGym\\FrontEnd\\Views\\Shared",
+    "\\UGym_NetFramework"
   ],
-  "SelectedNode": "\\UGym.sln",
+  "SelectedNode": "\\UGym_NetCore\\UGym\\FrontEnd\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }
