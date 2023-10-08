@@ -161,7 +161,7 @@ header .navbar {
 
 /* Editado */
  .navbar-brand img {
-	width: 250px; /* Ajusta el tamaño de la imagen según lo necesites */
+	width: 200px; /* Ajusta el tamaño de la imagen según lo necesites */
 	height: auto; /* Esto mantendrá la proporción de aspecto de la imagen */
 	margin-right: 100px; /* Agrega espacio entre el ícono y la imagen si lo necesitas */
 	margin-top: 10px;

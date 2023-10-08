@@ -1,6 +1,46 @@
-﻿@{
+﻿@model IEnumerable<FrontEnd.Models.MembersViewModel>
+
+@{
     Layout = "~/Views/Shared/_Nutritionist_layout.cshtml";
 }
+<style>
+    /* Estilos personalizados */
+    .container {
+        text-align: center; /* Centra el contenido */
+    }
+
+    table.table {
+        width: auto; /* Ancho automático */
+        background-color: white; /* Fondo blanco */
+        max-width: 100%; /* Máximo ancho del contenedor */
+        margin: 20px auto;
+        border-radius: 5px; /* Bordes redondeados */
+        overflow: hidden; /* Oculta el contenido que se desborda */
+    }
+
+    .table th,
+    .table td {
+        vertical-align: middle;
+        border: 1px solid white; /* Borde blanco */
+        text-align: center; /* Centra el contenido horizontalmente */
+    }
+
+    .btn {
+        margin-right: 5px;
+    }
+
+    /* Estilo para centrar verticalmente los elementos en las filas */
+    .row-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Estilo para centrar el texto de las entradas de filtro verticalmente */
+    .filter-input {
+        margin-bottom: 0; /* Elimina el espacio debajo de las entradas de filtro */
+    }
+</style>
 
 <div class="container">
     <h2>Lista de Clientes</h2>
@@ -22,40 +62,98 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Número de Socio</th>
-                <th>Nombre</th>
-                <th>Número Teléfonico</th>
-                <th>Última Visita</th>
-                <th>Informes</th>
-                <th>Acciones</th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MemberId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MemberNumb)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FullName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Gender)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cedula)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Birthday)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ocupation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.KnowGym)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Motivation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MobileNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.EmergencyContactId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MembFileId)
+                </th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>001</td>
-                <td>Cliente A</td>
-                <td>123-456-7890</td>
-                <td>01/08/2023</td>
-                <td>
-                    @Html.ActionLink("Crear", "Reports", "Nutritionist", new { area = "" }, new { @class = "btn waves-effect waves-light" })
-                </td>
-                <td>
-                    <button class="btn waves-effect waves-light borrarBtn">Borrar</button>
-                </td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Cliente B</td>
-                <td>987-654-3210</td>
-                <td>15/07/2023</td>
-                <td>
-                    <a href="#" class="btn btn-primary">Crear</a>
-                </td>
-                <td>
-                    <button class="btn waves-effect waves-light borrarBtn">Borrar</button>
-                </td>
-            </tr>
-            <!-- Agrega más filas de clientes aquí -->
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MemberId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MemberNumb)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Gender)
+                    </td>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.Cedula)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Birthday)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ocupation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.KnowGym)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Motivation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MobileNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmergencyContactId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MembFileId)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
     <p id="mensajeBorrado" style="display: none; color: green;">Informe Borrado</p>
