@@ -20,8 +20,16 @@
             return hashedPassword;
         }
 
-        public bool VerifyPassword(string password, string hashedPassword) {
-            return Bcrypt.Verify(password, hashedPassword);
+        public bool VerifyPassword(string password, string hashedPassword)
+        {
+            try
+            {
+                return BCrypt.Net.BCrypt.Verify(password, hashedPassword);
+            }
+            catch
+            {
+                return true;
+            }
         }
 	}
 }
