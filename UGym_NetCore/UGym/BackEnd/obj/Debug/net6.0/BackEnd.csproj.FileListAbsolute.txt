@@ -138,3 +138,6 @@ C:\Users\diego\Source\Repos\UGym\UGym_NetCore\UGym\BackEnd\obj\Debug\net6.0\refi
 C:\Users\diego\Source\Repos\UGym\UGym_NetCore\UGym\BackEnd\obj\Debug\net6.0\BackEnd.pdb
 C:\Users\diego\Source\Repos\UGym\UGym_NetCore\UGym\BackEnd\obj\Debug\net6.0\BackEnd.genruntimeconfig.cache
 C:\Users\diego\Source\Repos\UGym\UGym_NetCore\UGym\BackEnd\obj\Debug\net6.0\ref\BackEnd.dll
+C:\Users\serra\Source\Repos\UGym\UGym_NetCore\UGym\BackEnd\bin\Debug\net6.0\BCrypt.Net-Core.dll
+C:\Users\serra\Source\Repos\UGym\UGym_NetCore\UGym\BackEnd\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\serra\Source\Repos\UGym\UGym_NetCore\UGym\BackEnd\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
