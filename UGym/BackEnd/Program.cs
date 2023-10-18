@@ -1,4 +1,41 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using BackEnd.Data;
+using BackEnd.Areas.Identity.Data;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 var builder = WebApplication.CreateBuilder(args);
+
+# region Connection String
+var connectionString = builder.Configuration.GetConnectionString("UGymContextConnection") ?? throw new InvalidOperationException("Connection string 'UGymContextConnection' not found.");
+
+builder.Services.AddDbContext<UGymContext>(options =>
+    options.UseSqlServer(connectionString));
+#endregion
+
+#region Identity
+builder.Services.AddIdentity<UGymUser, IdentityRole> (options =>
+    {
+        options.SignIn.RequireConfirmedAccount = false;
+        options.Password.RequiredLength = 3;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequireDigit = false;
+        options.Password.RequireLowercase = false;
+        options.Password.RequireUppercase = false;
+    })
+    .AddEntityFrameworkStores<UGymContext>()
+    .AddDefaultTokenProviders();
+#endregion
+
+# region Authentication
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+});
+#endregion
 
 // Add services to the container.
 
@@ -15,6 +52,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseAuthentication();;
 
 app.UseAuthorization();
 
