@@ -5,16 +5,7 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackEnd", "BackEnd\BackEnd.csproj", "{1A0B5270-8C40-4347-B12E-2EAF05164ED9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{E8D4C0F8-F654-4DB3-A1D0-B4D67CAAD595}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{339BE5B8-1443-42B5-AEDC-65E1B6FAA6B2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackUps", "BackUps", "{CC81FD83-3D44-4A00-B47C-B0020F38801D}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Downloads\Backup\UGym.bak = ..\..\..\..\Downloads\Backup\UGym.bak
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{C5573EE8-7B7E-4A04-AD89-800DB0429C94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +24,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{CC81FD83-3D44-4A00-B47C-B0020F38801D} = {E8D4C0F8-F654-4DB3-A1D0-B4D67CAAD595}
-		{C5573EE8-7B7E-4A04-AD89-800DB0429C94} = {E8D4C0F8-F654-4DB3-A1D0-B4D67CAAD595}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F81AC37-1DE6-4EE2-AA22-D58F4C7DF582}
