@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "MyRoutine";
+    Layout = "~/Views/Shared/_Client_layout.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<div class="container">
+    <h2>Mi Rutina</h2>
+    <div>
+        <!-- Lista de ejercicios asignados, series y repeticiones -->
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Ejercicio</th>
+                    <th>Series</th>
+                    <th>Repeticiones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ejercicio 1</td>
+                    <td>3</td>
+                    <td>10</td>
+
+                </tr>
+                <tr>
+                    <td>Ejercicio 2</td>
+                    <td>4</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Ejercicio 3</td>
+                    <td>5</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="comentarios-field">
+        <input type="text" id="comentarios" placeholder="Agregar comentarios">
+    </div>
+    <button id="guardar-btn" class="btn waves-effect waves-light">Guardar</button>
+    <button id="cancelar-rutina-btn" class="btn waves-effect waves-light">Cancelar</button>
+    <br />
+    <br />
+    @Html.ActionLink("Regresar", "Routines", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+</div>
+
+<!-- Aviso de Progreso Cancelado -->
+<div id="aviso-cancelado" class="hide">
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <span class="white-text">Progreso Cancelado</span>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Aviso de Progreso Guardado -->
+<div id="aviso-guardado" class="hide">
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <span class="white-text">Progreso Guardado</span>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#miRutina-link').click(function () {
+            $('#comentarios-field').show();
+            $('#guardar-btn').show();
+        });
+
+        $('#cancelar-rutina-btn').click(function () {
+            $('#aviso-cancelado').removeClass('hide');
+        });
+
+        $('#guardar-btn').click(function () {
+            $('#aviso-guardado').removeClass('hide');
+        });
+    });
+</script>

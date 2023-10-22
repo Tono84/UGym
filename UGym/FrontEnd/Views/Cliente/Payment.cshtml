@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Renovar Membresía";
+    Layout = "~/Views/Shared/_Client_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Renovar Membresía</h2>
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Información de Tarjeta</span>
+                    <form>
+                        <div class="info-message" style="display: none;">
+                            <div class="card-panel teal lighten-2">
+                                <span class="white-text">Membresía renovada con éxito</span>
+                                <span class="white-text">Nueva fecha de expiración: 24/08/2024</span>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <input id="numeroTarjeta" type="text" class="validate" placeholder="Número de Tarjeta">
+                        </div>
+                        <div class="input-field">
+                            <input id="fechaExpiracionTarjeta" type="text" class="datepicker" placeholder="Fecha de Expiración">
+                        </div>
+                        <div class="input-field">
+                            <input id="codigoSeguridad" type="text" class="validate" placeholder="Código de Seguridad">
+                        </div>
+                        <div class="input-field">
+                            <input id="nombreTarjeta" type="text" class="validate" placeholder="Nombre en la Tarjeta">
+                        </div>
+                        <button class="btn waves-effect waves-light pagarBtn" type="button" name="action">Renovar</button>
+                        @Html.ActionLink("Cancelar", "Membership", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                        @Html.ActionLink("Regresar", "Membership", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var selectElems = document.querySelectorAll('select');
+        var datepickers = document.querySelectorAll('.datepicker');
+
+        M.FormSelect.init(selectElems);
+        M.Datepicker.init(datepickers, {
+            format: 'dd/mm/yyyy'
+        });
+
+        var pagarBtn = document.querySelector('.pagarBtn');
+        var infoMessage = document.querySelector('.info-message');
+
+        pagarBtn.addEventListener('click', function () {
+            infoMessage.style.display = 'block';
+        });
+    });
+</script>

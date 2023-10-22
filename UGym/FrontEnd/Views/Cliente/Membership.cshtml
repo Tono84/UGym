@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Membresía";
+    Layout = "~/Views/Shared/_Client_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Membresía</h2>
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Información de Membresía</span>
+                    <form>
+                        <div class="input-field">
+                            <input id="nombreCompleto" type="text" class="validate" value="José Solórzano">
+                            <label for="nombreCompleto">Nombre Completo</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="tipoMembresia" type="text" class="validate" value="Premium">
+                            <label for="tipoMembresia">Tipo de Membresía</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="ModalidadPago" type="text" class="validate" value="Anual">
+                            <label for="ModalidadPago">Modalidad de Pago</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="estado" type="text" class="validate" value="Activo">
+                            <label for="estado">Estado</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="fechaExpiracion" type="text" class="datepicker" value="24/08/2023">
+                            <label for="fechaExpiracion">Fecha de Expiración</label>
+                        </div>
+                        @Html.ActionLink("Pagar", "Payment", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light"    })
+                        @Html.ActionLink("Cancelar", "Profile", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                        @Html.ActionLink("Regresar", "Profile", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var datepickers = document.querySelectorAll('.datepicker');
+        var options = {
+            format: 'dd/mm/yyyy'
+        };
+        M.Datepicker.init(datepickers, options);
+    });
+</script>
