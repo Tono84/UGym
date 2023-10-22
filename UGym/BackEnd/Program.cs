@@ -20,6 +20,7 @@ builder.Services.AddDbContext<UGymContext>(options =>
 builder.Services.AddIdentity<UGymUser, IdentityRole> (options =>
     {
         options.SignIn.RequireConfirmedAccount = false;
+        options.SignIn.RequireConfirmedEmail = true;
         options.Password.RequiredLength = 3;
         options.Password.RequireNonAlphanumeric = false;
         options.Password.RequireDigit = false;
