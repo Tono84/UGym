@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "Crear Rutina";
+    Layout = "~/Views/Shared/_Trainer_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Crear Rutina</h2>
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Crear Rutina</span>
+                    <form>
+                        <!-- Mensaje de rutina creada -->
+                        <div class="info-message" style="display: none;">
+                            <h4>Rutina Creada</h4>
+                            <p>La rutina ha sido creada exitosamente.</p>
+                        </div>
+                        <div class="input-field">
+                            <select id="selectEjercicios">
+                                <option value="" disabled selected>Selecciona un ejercicio</option>
+                                <option value="1">Ejercicio 1</option>
+                                <option value="2">Ejercicio 2</option>
+                                <option value="3">Ejercicio 3</option>
+                                <!-- Agrega más ejercicios aquí -->
+                            </select>
+                            <label>Ejercicios Disponibles</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="number" id="series" class="validate">
+                            <label for="series">Cantidad de Series</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="number" id="repeticiones" class="validate">
+                            <label for="repeticiones">Repeticiones por Ejercicio</label>
+                        </div>
+                        <a href="#" class="btn waves-effect waves-light" id="agregarBtn">Agregar</a>
+                        <a href="@Url.Action("Drafts", "Trainer")" class="btn waves-effect waves-light" id="agregarBtn">Plantillas</a>
+                        <a href="#" class="btn waves-effect waves-light" id="guardarBtn">Guardar</a>
+                    </form>
+                </div>
+            </div>
+
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th>Ejercicio</th>
+                        <th>Series</th>
+                        <th>Repeticiones</th>
+                    </tr>
+                </thead>
+                <tbody id="ejerciciosTableBody">
+                    <!-- Aquí se agregarán los ejercicios -->
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<!-- Aviso -->
+<div id="aviso" class="hide">
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <span class="white-text">Rutina Creada</span>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var guardarBtn = document.getElementById('guardarBtn');
+        var agregarBtn = document.getElementById('agregarBtn');
+        var infoMessage = document.querySelector('.info-message');
+        var ejerciciosTableBody = document.getElementById('ejerciciosTableBody');
+
+        guardarBtn.addEventListener('click', function () {
+            infoMessage.style.display = 'block';
+        });
+
+        agregarBtn.addEventListener('click', function () {
+            var ejercicioSeleccionado = document.getElementById('selectEjercicios');
+            var series = document.getElementById('series').value;
+            var repeticiones = document.getElementById('repeticiones').value;
+
+            if (ejercicioSeleccionado.value !== "") {
+                var ejercicioNombre = ejercicioSeleccionado.options[ejercicioSeleccionado.selectedIndex].text;
+                var newRow = ejerciciosTableBody.insertRow();
+                var ejercicioCell = newRow.insertCell(0);
+                var seriesCell = newRow.insertCell(1);
+                var repeticionesCell = newRow.insertCell(2);
+
+                ejercicioCell.innerHTML = ejercicioNombre;
+                seriesCell.innerHTML = series;
+                repeticionesCell.innerHTML = repeticiones;
+            }
+        });
+
+        // Inicializar el select de ejercicios
+        var selectEjercicios = document.getElementById('selectEjercicios');
+        var selectInstance = M.FormSelect.init(selectEjercicios);
+
+    });
+</script>

@@ -1,0 +1,56 @@
+﻿@{
+    Layout = "~/Views/Shared/_Trainer_layout.cshtml";
+    ViewBag.Title = "Expedientes";
+}
+
+<div class="container">
+    <h2>Lista de Expedientes</h2>
+    <div class="row">
+        <div class="col s12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID Expediente</th>
+                        <th>Nombre Cliente</th>
+                        <th>Fecha Creación</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Cliente A</td>
+                        <td>01/08/2023</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Cliente B</td>
+                        <td>15/07/2023</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <!-- Agregar más filas de expedientes aquí -->
+                </tbody>
+            </table>
+            @Html.ActionLink("Regresar", "Index", "Trainer", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+        </div>
+    </div>
+</div>
+
+<style>
+    .table {
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+        .table th, .table td {
+            vertical-align: middle;
+        }
+
+    .btn {
+        margin-right: 5px;
+    }
+</style>
