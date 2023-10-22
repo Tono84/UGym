@@ -1,0 +1,113 @@
+﻿@{
+    Layout = "~/Views/Shared/_Therapist_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Lista de Clientes</h2>
+    <div class="row">
+        <div class="col s12">
+            <div class="input-field">
+                <input type="text" id="filtroNumeroSocio" placeholder="Filtrar por Número de Socio">
+            </div>
+            <div class="input-field">
+                <input type="text" id="filtroNombre" placeholder="Filtrar por Nombre">
+            </div>
+            <div class="input-field">
+                <input type="text" id="filtroApellidos" placeholder="Filtrar por Apellidos">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Número de Socio</th>
+                <th>Nombre</th>
+                <th>Número Teléfonico</th>
+                <th>Última Visita</th>
+                <th>Informes</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Cliente A</td>
+                <td>123-456-7890</td>
+                <td>01/08/2023</td>
+                <td>
+                    @Html.ActionLink("Crear", "Reports", "Therapist", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+                </td>
+                <td>
+                    <button class="btn waves-effect waves-light borrarBtn">Borrar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Cliente B</td>
+                <td>987-654-3210</td>
+                <td>15/07/2023</td>
+                <td>
+                    <a href="#" class="btn btn-primary">Crear</a>
+                </td>
+                <td>
+                    <button class="btn waves-effect waves-light borrarBtn">Borrar</button>
+                </td>
+            </tr>
+            <!-- Agrega más filas de clientes aquí -->
+        </tbody>
+    </table>
+    <p id="mensajeBorrado" style="display: none; color: green;">Informe Borrado</p>
+    @Html.ActionLink("Regresar", "Index", "Therapist", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+</div>
+
+<!-- Estilos -->
+<style>
+    .table {
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+        .table th, .table td {
+            vertical-align: middle;
+        }
+
+    .btn {
+        margin-right: 5px;
+    }
+</style>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.borrarBtn').on('click', function () {
+            $('#mensajeBorrado').show();
+            setTimeout(function () {
+                $('#mensajeBorrado').hide();
+            }, 2000);
+        });
+
+        $('#filtroNumeroSocio, #filtroNombre, #filtroApellidos').on('input', function () {
+            var filtroNumeroSocio = $('#filtroNumeroSocio').val().toLowerCase();
+            var filtroNombre = $('#filtroNombre').val().toLowerCase();
+            var filtroApellidos = $('#filtroApellidos').val().toLowerCase();
+
+            $('.table tbody tr').each(function () {
+                var numeroSocio = $(this).find('td:eq(0)').text().toLowerCase();
+                var nombre = $(this).find('td:eq(1)').text().toLowerCase();
+                var apellidos = $(this).find('td:eq(1)').text().toLowerCase();
+
+                if (numeroSocio.includes(filtroNumeroSocio) &&
+                    nombre.includes(filtroNombre) &&
+                    apellidos.includes(filtroApellidos)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
+</script>
