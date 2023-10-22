@@ -4,6 +4,8 @@ using BackEnd.Data;
 using BackEnd.Areas.Identity.Data;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using BackEnd.Service.Models;
+using BackEnd.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,7 @@ builder.Services.AddDbContext<UGymContext>(options =>
 builder.Services.AddIdentity<UGymUser, IdentityRole> (options =>
     {
         options.SignIn.RequireConfirmedAccount = false;
+        options.SignIn.RequireConfirmedEmail = true;
         options.Password.RequiredLength = 3;
         options.Password.RequireNonAlphanumeric = false;
         options.Password.RequireDigit = false;
@@ -35,6 +38,12 @@ builder.Services.AddAuthentication(options =>
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
 });
+#endregion
+
+# region Email Configuration
+var emailconfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
+builder.Services.AddSingleton(emailconfig);
+builder.Services.AddScoped<IEmailService, EmailService>();
 #endregion
 
 // Add services to the container.
