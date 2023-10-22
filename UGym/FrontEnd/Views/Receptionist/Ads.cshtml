@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Subir Anuncio";
+    Layout = "~/Views/Shared/_Receptionist_Layout.cshtml";
+}
+
+
+
+<div class="container">
+    <h2>Subir Anuncio</h2>
+    <div class="row">
+        <div class="col s12 m6 offset-m3">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Información del Anuncio</span>
+                    <form id="formularioAnuncio" enctype="multipart/form-data">
+                        <div class="input-field">
+                            <input id="tituloAnuncio" type="text" class="validate" placeholder="Título del Anuncio">
+                        </div>
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>Archivo</span>
+                                <input type="file" id="archivoAnuncio" name="archivoAnuncio">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Seleccione un archivo">
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="contenidoAnuncio" class="materialize-textarea" placeholder="Contenido del Anuncio"></textarea>
+                        </div>
+                        <button class="btn waves-effect waves-light" id="guardarAnuncioBtn" type="button" name="action">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    @Html.ActionLink("Regresar", "Index", "Receptionist", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+</div>
+
+<!-- Aviso de Anuncio Guardado -->
+<div id="aviso-anuncio-guardado" class="hide">
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <span class="white-text">Anuncio Guardado</span>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        M.AutoInit(); // Inicializar componentes de Materialize
+
+        var guardarAnuncioBtn = document.getElementById('guardarAnuncioBtn');
+        var avisoAnuncioGuardado = document.getElementById('aviso-anuncio-guardado');
+        var formularioAnuncio = document.getElementById('formularioAnuncio');
+
+        guardarAnuncioBtn.addEventListener('click', function () {
+            avisoAnuncioGuardado.classList.remove('hide');
+        });
+
+        formularioAnuncio.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Aquí puedes agregar lógica para enviar el formulario al servidor, incluido el archivo
+        });
+    });
+</script>
