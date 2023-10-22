@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Seleccionar Rutina";
+    Layout = "~/Views/Shared/_Trainer_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Seleccionar Rutina</h2>
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Nombre de Plantilla</th>
+                <th>Número de Ejercicios</th>
+                <th>Cantidad de veces utilizadas</th>
+                <th>Seleccionar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Plantilla 1</td>
+                <td>10</td>
+                <td>5</td>
+                <td><a href="#" class="btn waves-effect waves-light seleccionar-btn">Seleccionar</a></td>
+            </tr>
+            <tr>
+                <td>Plantilla 2</td>
+                <td>8</td>
+                <td>3</td>
+                <td><a href="#" class="btn waves-effect waves-light seleccionar-btn">Seleccionar</a></td>
+            </tr>
+            <tr>
+                <td>Plantilla 3</td>
+                <td>12</td>
+                <td>7</td>
+                <td><a href="#" class="btn waves-effect waves-light seleccionar-btn">Seleccionar</a></td>
+            </tr>
+            <!-- Agregar más filas aquí -->
+        </tbody>
+    </table>
+    <br>
+    <a href="@Url.Action("Routines", "Trainer")" class="btn waves-effect waves-light">Regresar</a>
+</div>
+
+<!-- Mensaje de Rutina Creada -->
+<div id="mensaje" class="hide">
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <span class="white-text">Rutina Creada</span>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.seleccionar-btn').click(function () {
+            $('#mensaje').removeClass('hide');
+        });
+    });
+</script>

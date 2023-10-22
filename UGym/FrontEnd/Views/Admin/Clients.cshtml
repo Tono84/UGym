@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "Crear Usuario";
+    Layout = "~/Views/Shared/_Admin_layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Clientes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de Clientes</h2>
+        <div class="row">
+            <!-- Filtros de búsqueda -->
+            <div class="input-field col s4">
+                <input id="filtroNombre" type="text" placeholder="Nombre">
+            </div>
+            <div class="input-field col s4">
+                <input id="filtroApellidos" type="text" placeholder="Apellidos">
+            </div>
+            <div class="input-field col s4">
+                <button class="btn waves-effect waves-light" id="btnFiltrar">Filtrar</button>
+            </div>
+        </div>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Ocupación</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Género</th>
+                    <th>Dirección</th>
+                    <th>Número Telefónico</th>
+                    <th>Contacto de Emergencia</th>
+                    <th>Número de Emergencia</th>
+                    <th>Tipo de Membresía</th>
+                    <th>Estado</th>
+                    <th>Fecha de Expiración</th>
+                </tr>
+            </thead>
+            <tbody id="tablaClientes">
+                <!-- Aquí se mostrarán los clientes filtrados -->
+            </tbody>
+        </table>
+        <br />
+        <br />
+        @Html.ActionLink("Regresar", "Index", "Admin", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+
+            var btnFiltrar = document.getElementById('btnFiltrar');
+            var filtroNombre = document.getElementById('filtroNombre');
+            var filtroApellidos = document.getElementById('filtroApellidos');
+            var tablaClientes = document.getElementById('tablaClientes');
+
+            var clientes = [
+                { nombre: "Juan", apellidos: "Pérez", ocupacion: "Estudiante", fechaNacimiento: "1990-01-15", genero: "Masculino", direccion: "Calle 123", telefono: "1234567890", contactoEmergencia: "María", telefonoEmergencia: "9876543210", tipoMembresia: "Tipo1", estado: "Activo", fechaExpiracion: "2023-12-31" },
+                { nombre: "María", apellidos: "Gómez", ocupacion: "Entrenadora", fechaNacimiento: "1985-05-10", genero: "Femenino", direccion: "Avenida 456", telefono: "9876543210", contactoEmergencia: "Juan", telefonoEmergencia: "1234567890", tipoMembresia: "Tipo2", estado: "Inactivo", fechaExpiracion: "2023-08-31" },
+                { nombre: "Luis", apellidos: "Rodríguez", ocupacion: "Abogado", fechaNacimiento: "1988-11-20", genero: "Masculino", direccion: "Plaza 789", telefono: "5555555555", contactoEmergencia: "Ana", telefonoEmergencia: "2222222222", tipoMembresia: "Tipo1", estado: "Activo", fechaExpiracion: "2023-10-15" },
+                // Agrega más clientes aquí
+            ];
+
+            function mostrarClientes(filtrados) {
+                tablaClientes.innerHTML = '';
+                filtrados.forEach(function (cliente) {
+                    tablaClientes.innerHTML += `
+                                    <tr>
+                                        <td>${cliente.nombre}</td>
+                                        <td>${cliente.apellidos}</td>
+                                        <td>${cliente.ocupacion}</td>
+                                        <td>${cliente.fechaNacimiento}</td>
+                                        <td>${cliente.genero}</td>
+                                        <td>${cliente.direccion}</td>
+                                        <td>${cliente.telefono}</td>
+                                        <td>${cliente.contactoEmergencia}</td>
+                                        <td>${cliente.telefonoEmergencia}</td>
+                                        <td>${cliente.tipoMembresia}</td>
+                                        <td>${cliente.estado}</td>
+                                        <td>${cliente.fechaExpiracion}</td>
+                                    </tr>
+                                `;
+                });
+            }
+
+            btnFiltrar.addEventListener('click', function () {
+                var filtroNombreValor = filtroNombre.value.toLowerCase();
+                var filtroApellidosValor = filtroApellidos.value.toLowerCase();
+
+                var filtrados = clientes.filter(function (cliente) {
+                    var nombre = cliente.nombre.toLowerCase();
+                    var apellidos = cliente.apellidos.toLowerCase();
+
+                    return (nombre.includes(filtroNombreValor) && apellidos.includes(filtroApellidosValor));
+                });
+
+                mostrarClientes(filtrados);
+            });
+
+            // Mostrar todos los clientes al cargar la página
+            mostrarClientes(clientes);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Clases Disponibles";
+    Layout = "~/Views/Shared/_Client_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Clases Disponibles</h2>
+    <ul class="collection">
+        <li class="collection-item" data-class-id="1">
+            <span class="title">Clase de Yoga</span>
+            <p>Instructor: John Doe</p>
+            <p>Fecha: 2023-08-25</p>
+            <p>Hora: 10:00 AM</p>
+            <a href="#" class="btn waves-effect waves-light">Reservar</a>
+        </li>
+        <li class="collection-item" data-class-id="2">
+            <span class="title">Clase de Zumba</span>
+            <p>Instructor: Jane Smith</p>
+            <p>Fecha: 2023-08-27</p>
+            <p>Hora: 6:00 PM</p>
+            <a href="#" class="btn waves-effect waves-light">Reservar</a>
+        </li>
+        <!-- Agregar más clases aquí -->
+    </ul>
+    <br />
+    <br />
+    @Html.ActionLink("Regresar", "Index", "Cliente", new { area = "" }, new { @class = "btn waves-effect waves-light" })
+</div>
+
+<!-- Aviso de Clase Reservada -->
+<div id="aviso-reservada" class="hide">
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <span class="white-text">Clase Reservada: Tipo de Clase, Instructor, Fecha y Hora</span>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.btn.waves-effect.waves-light').click(function () {
+            var classId = $(this).closest('.collection-item').data('class-id');
+            var className = $(this).siblings('.title').text();
+            var instructor = $(this).siblings('p:eq(0)').text();
+            var date = $(this).siblings('p:eq(1)').text().replace("Fecha: ", "");
+            var time = $(this).siblings('p:eq(2)').text().replace("Hora: ", "");
+            var fullMessage = "Clase Reservada: " + className + ", " + instructor + ", Fecha " + date + " y Hora " + time;
+
+            $('#aviso-reservada span').text(fullMessage);
+            $('#aviso-reservada').removeClass('hide');
+        });
+    });
+</script>

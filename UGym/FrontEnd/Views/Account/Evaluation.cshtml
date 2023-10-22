@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "Evaluación Física";
+}
+
+<h2>Evaluación Física</h2>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Evaluación Física</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="~/css/style.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .pagina-evaluacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .caja-evaluacion {
+            position: relative;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .horario-dropdown {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .modal-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <br />
+    <div class="pagina-evaluacion">
+        <div class="caja-evaluacion">
+            <h3>Evaluación Física</h3>
+            <input type="date" placeholder="Seleccione una fecha" class="datepicker-modal" id="fecha" />
+            <select class="horario-dropdown" id="horario">
+                <option value="" disabled selected>Seleccione un horario</option>
+                <option value="8:00 am">8:00 am</option>
+                <option value="9:00 am">9:00 am</option>
+                <option value="10:00 am">10:00 am</option>
+                <option value="11:00 am">11:00 am</option>
+                <option value="12:00 pm">12:00 pm</option>
+                <option value="1:00 pm">1:00 pm</option>
+                <option value="2:00 pm">2:00 pm</option>
+                <option value="3:00 pm">3:00 pm</option>
+                <option value="4:00 pm">4:00 pm</option>
+                <option value="5:00 pm">5:00 pm</option>
+            </select>
+            <button class="agendar-button btn waves-effect waves-light">
+                @Html.ActionLink("Codigo QR", "QRCode", "Account", new { area = "" }, new { @class = "waves-effect waves-dark" })
+            </button>
+        </div>
+    </div>
+    <div class="modal" id="modal-agendado">
+        <div class="modal-content">
+            <h4>Cita Agendada</h4>
+            <p>Su cita ha sido agendada exitosamente para la fecha y hora seleccionadas.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker-modal').datepicker({
+                format: "dd/mm/yyyy",
+                container: 'body'
+            });
+
+            $('select').formSelect();
+
+            $('.agendar-button').click(function () {
+                $('#modal-agendado').modal('open');
+            });
+        });
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+</html>

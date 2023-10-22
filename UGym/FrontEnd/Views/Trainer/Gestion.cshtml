@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Gestionar Rutinas";
+    Layout = "~/Views/Shared/_Trainer_layout.cshtml";
+}
+
+<div class="container">
+    <h2>Gestionar Rutinas</h2>
+    <br />
+    <a href="@Url.Action("Routines", "Trainer")" class="btn waves-effect waves-light">Crear</a>
+    <br />
+    <br />
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Número de Rutina</th>
+                <th>Número de Ejercicios</th>
+                <th>Número de veces completadas</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>10</td>
+                <td>5</td>
+                <td>
+                    <a href="#" class="btn waves-effect waves-light modificar-btn">Modificar</a>
+                    <a href="#" class="btn waves-effect waves-light borrar-btn">Borrar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>8</td>
+                <td>3</td>
+                <td>
+                    <a href="#" class="btn waves-effect waves-light modificar-btn">Modificar</a>
+                    <a href="#" class="btn waves-effect waves-light borrar-btn">Borrar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>12</td>
+                <td>7</td>
+                <td>
+                    <a href="#" class="btn waves-effect waves-light modificar-btn">Modificar</a>
+                    <a href="#" class="btn waves-effect waves-light borrar-btn">Borrar</a>
+                    <!-- Agregar más filas aquí -->
+        </tbody>
+    </table>
+    <br />
+    <a href="@Url.Action("Clients", "Trainer")" class="btn waves-effect waves-light">Regresar</a>
+</div>
+
+<!-- Aviso de Rutina Borrada -->
+<div id="aviso-borrado" class="hide">
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <span class="white-text">Rutina Borrada</span>
+        </div>
+    </div>
+</div>
+
+<!-- Aviso de Rutina Modificada -->
+<div id="aviso-modificada" class="hide">
+    <div class="container">
+        <div class="card-panel teal lighten-2">
+            <span class="white-text">Rutina Modificada</span>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.modificar-btn').click(function () {
+            var row = $(this).closest('tr');
+            var numeroRutina = row.find('td:nth-child(1)').text();
+            var numeroEjercicios = row.find('td:nth-child(2)').text();
+            var vecesCompletadas = row.find('td:nth-child(3)').text();
+
+
+
+            // Una vez realizada la modificación, puedes mostrar el aviso
+            $('#aviso-modificada').removeClass('hide');
+        });
+
+        $('.borrar-btn').click(function () {
+            $(this).closest('tr').remove(); // Elimina la fila de la tabla
+            $('#aviso-borrado').removeClass('hide'); // Muestra el mensaje de "Rutina Borrada"
+        });
+    });
+</script>
