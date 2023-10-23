@@ -4,6 +4,7 @@ using BackEnd.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackEnd.Migrations
 {
     [DbContext(typeof(UGymContext))]
-    partial class UGymContextModelSnapshot : ModelSnapshot
+    [Migration("20231023025923_AddingReports")]
+    partial class AddingReports
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,31 +47,6 @@ namespace BackEnd.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Ads");
-                });
-
-            modelBuilder.Entity("BackEnd.Areas.Identity.Data.Attendance", b =>
-                {
-                    b.Property<int>("AttendanceId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AttendanceId"), 1L, 1);
-
-                    b.Property<DateTime>("DateAttendance")
-                        .HasColumnType("datetime2");
-
-                    b.Property<TimeSpan>("TimeAttendance")
-                        .HasColumnType("time");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("AttendanceId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Attendances");
                 });
 
             modelBuilder.Entity("BackEnd.Areas.Identity.Data.EmergencyContact", b =>
@@ -457,17 +434,6 @@ namespace BackEnd.Migrations
                 });
 
             modelBuilder.Entity("BackEnd.Areas.Identity.Data.Ad", b =>
-                {
-                    b.HasOne("BackEnd.Areas.Identity.Data.UGymUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("BackEnd.Areas.Identity.Data.Attendance", b =>
                 {
                     b.HasOne("BackEnd.Areas.Identity.Data.UGymUser", "User")
                         .WithMany()
