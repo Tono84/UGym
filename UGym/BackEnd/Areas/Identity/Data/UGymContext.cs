@@ -12,6 +12,10 @@ public class UGymContext : IdentityDbContext<UGymUser>
     {
     }
 
+    public UGymContext()
+    {
+    }
+
     public virtual DbSet<EmergencyContact> EmergencyContacts { get; set; } = null!;
     public virtual DbSet<UserFile> UserFiles { get; set; } = null!;
     public virtual DbSet<Qrcode> Qrcodes { get; set; } = null!;
@@ -25,6 +29,11 @@ public class UGymContext : IdentityDbContext<UGymUser>
         // Customize the ASP.NET Identity model and override the defaults if needed.
         // For example, you can rename the ASP.NET Identity table names and more.
         // Add your customizations after calling base.OnModelCreating(builder);
+    }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        base.OnConfiguring(optionsBuilder);
     }
 
     private static void SeedRoles(ModelBuilder modelBuilder)

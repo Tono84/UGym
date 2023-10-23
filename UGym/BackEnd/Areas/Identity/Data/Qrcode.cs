@@ -1,6 +1,9 @@
-﻿namespace BackEnd.Areas.Identity.Data
+﻿using System;
+using System.Collections.Generic;
+
+namespace BackEnd.Areas.Identity.Data
 {
-    public class Qrcode
+    public partial class Qrcode
     {
         public Qrcode()
         {
