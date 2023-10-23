@@ -22,6 +22,76 @@ namespace BackEnd.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.Ad", b =>
+                {
+                    b.Property<int>("AdId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AdId"), 1L, 1);
+
+                    b.Property<string>("MediaLink")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("AdId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Ads");
+                });
+
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.Attendance", b =>
+                {
+                    b.Property<int>("AttendanceId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AttendanceId"), 1L, 1);
+
+                    b.Property<DateTime>("DateAttendance")
+                        .HasColumnType("datetime2");
+
+                    b.Property<TimeSpan>("TimeAttendance")
+                        .HasColumnType("time");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("AttendanceId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Attendances");
+                });
+
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.EmergencyContact", b =>
+                {
+                    b.Property<int>("EmergencyContactId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmergencyContactId"), 1L, 1);
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MobileNumber")
+                        .HasColumnType("int");
+
+                    b.HasKey("EmergencyContactId");
+
+                    b.ToTable("EmergencyContacts");
+                });
+
             modelBuilder.Entity("BackEnd.Areas.Identity.Data.Qrcode", b =>
                 {
                     b.Property<int>("QrcodeId")
@@ -37,6 +107,42 @@ namespace BackEnd.Migrations
                     b.HasKey("QrcodeId");
 
                     b.ToTable("Qrcodes");
+                });
+
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.Report", b =>
+                {
+                    b.Property<int>("ReportId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReportId"), 1L, 1);
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReportDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReportName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReportType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("ReportId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reports");
                 });
 
             modelBuilder.Entity("BackEnd.Areas.Identity.Data.UGymUser", b =>
@@ -123,6 +229,8 @@ namespace BackEnd.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("EmergencyContactId");
+
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
 
@@ -133,7 +241,86 @@ namespace BackEnd.Migrations
 
                     b.HasIndex("QrcodeId");
 
+                    b.HasIndex("UserFileId");
+
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.UserFile", b =>
+                {
+                    b.Property<int>("UserFileId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserFileId"), 1L, 1);
+
+                    b.Property<string>("AlergyMeds")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AttendanceMotivation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AutoReg")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ChestPain")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CirguriesType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DetailCirguries")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FatDifLoss")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Focus")
+                        .HasColumnType("int");
+
+                    b.Property<string>("HeartDis")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("LastMonthStress")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LmonthEnergy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Nutrition")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QuantCirguries")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("QuantMeds")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SleepCycle")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("StepsDay")
+                        .HasColumnType("int");
+
+                    b.Property<string>("StressNutrition")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ThreeMonthEx")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("TimeSitting")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TrainMotivation")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TypeMeds")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserFileId");
+
+                    b.ToTable("UserFiles");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -161,50 +348,6 @@ namespace BackEnd.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "5f070c79-1064-4e7c-9a86-d10f8a63bae6",
-                            ConcurrencyStamp = "1",
-                            Name = "Administrator",
-                            NormalizedName = "Administrador"
-                        },
-                        new
-                        {
-                            Id = "0a252d9d-f40f-4a89-80f9-fb59cdaede24",
-                            ConcurrencyStamp = "2",
-                            Name = "User",
-                            NormalizedName = "Socio"
-                        },
-                        new
-                        {
-                            Id = "1b60d8b6-9b0d-4d46-a55c-5a30a5efa770",
-                            ConcurrencyStamp = "3",
-                            Name = "Nutritionist",
-                            NormalizedName = "Nutricionista"
-                        },
-                        new
-                        {
-                            Id = "db755e9b-5073-4bd1-919e-35c313d3118b",
-                            ConcurrencyStamp = "4",
-                            Name = "Receptionist",
-                            NormalizedName = "Recepcionista"
-                        },
-                        new
-                        {
-                            Id = "0043b54d-a383-4c2a-b4e8-3a7de145978f",
-                            ConcurrencyStamp = "5",
-                            Name = "Therapist",
-                            NormalizedName = "Terapeuta"
-                        },
-                        new
-                        {
-                            Id = "de2863a2-8485-4d85-9ab6-c9e2cade49ad",
-                            ConcurrencyStamp = "6",
-                            Name = "Coach",
-                            NormalizedName = "Entrenador"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -313,11 +456,52 @@ namespace BackEnd.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.Ad", b =>
+                {
+                    b.HasOne("BackEnd.Areas.Identity.Data.UGymUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.Attendance", b =>
+                {
+                    b.HasOne("BackEnd.Areas.Identity.Data.UGymUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.Report", b =>
+                {
+                    b.HasOne("BackEnd.Areas.Identity.Data.UGymUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("BackEnd.Areas.Identity.Data.UGymUser", b =>
                 {
+                    b.HasOne("BackEnd.Areas.Identity.Data.EmergencyContact", null)
+                        .WithMany("UGymUsers")
+                        .HasForeignKey("EmergencyContactId");
+
                     b.HasOne("BackEnd.Areas.Identity.Data.Qrcode", "Qrcode")
-                        .WithMany("CFTestUsers")
+                        .WithMany("UGymUsers")
                         .HasForeignKey("QrcodeId");
+
+                    b.HasOne("BackEnd.Areas.Identity.Data.UserFile", null)
+                        .WithMany("UGymUsers")
+                        .HasForeignKey("UserFileId");
 
                     b.Navigation("Qrcode");
                 });
@@ -373,9 +557,19 @@ namespace BackEnd.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.EmergencyContact", b =>
+                {
+                    b.Navigation("UGymUsers");
+                });
+
             modelBuilder.Entity("BackEnd.Areas.Identity.Data.Qrcode", b =>
                 {
-                    b.Navigation("CFTestUsers");
+                    b.Navigation("UGymUsers");
+                });
+
+            modelBuilder.Entity("BackEnd.Areas.Identity.Data.UserFile", b =>
+                {
+                    b.Navigation("UGymUsers");
                 });
 #pragma warning restore 612, 618
         }
