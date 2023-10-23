@@ -51,7 +51,9 @@ namespace BackEnd.Controllers
             {
                 Email = registerUser.Email,
                 SecurityStamp = Guid.NewGuid().ToString(),
-                UserName = registerUser.Username
+                UserName = registerUser.Username,
+                Name = registerUser.Name,
+
             };
             if (await _roleManager.RoleExistsAsync(role))
             {

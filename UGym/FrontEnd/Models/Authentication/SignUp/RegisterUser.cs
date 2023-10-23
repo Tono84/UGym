@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BackEnd.Models.Authentication.SignUp
+namespace FrontEnd.Models.Authentication.SignUp
 {
     public class RegisterUser
     {
-        [Display(Name = "Número de Socio")]
+        [Display (Name="Número de Socio")]
         [Required(ErrorMessage = "El número de socio es requerido")]
         public string? Username { get; set; }
 
@@ -44,5 +44,7 @@ namespace BackEnd.Models.Authentication.SignUp
         [Display(Name = "¿Como supiste de nosotros?")]
         [Required(ErrorMessage = "Este campo es requerido")]
         public string? KnowGym { get; set; }
+
     }
 }
+
