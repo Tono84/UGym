@@ -11,9 +11,9 @@ body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-weight:300;
 	line-height:1.6em;
-	color:#205a66;
+	/*color:#205a66;*/
 	font-size: 1.4em;
-	background: #272727;
+	background: #ffffff;
 }
 
 a:active {

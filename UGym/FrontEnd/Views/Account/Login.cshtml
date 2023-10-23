@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Login</h2>
@@ -12,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="~/css/style.css" rel="stylesheet">
+    @* <link href="~/css/style.css" rel="stylesheet"> *@
 </head>
 <body>
     <br />
@@ -34,9 +35,9 @@
 
         </div>
 
-        @*<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script>
+@*         <script>
         $(document).ready(function () {
         $('.formulario-login').submit(function (e) {
         e.preventDefault();
@@ -46,7 +47,7 @@
         $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
         });
         });
-        </script>*@
+        </script> *@
     </div>
     <br />
     <br />
