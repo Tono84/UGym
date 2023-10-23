@@ -1,6 +1,6 @@
 ﻿namespace BackEnd.Areas.Identity.Data
 {
-    public partial class EmergencyContact
+    public class EmergencyContact
     {
         public EmergencyContact()
         {
