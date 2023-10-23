@@ -12,6 +12,7 @@ public class UGymContext : IdentityDbContext<UGymUser>
     {
     }
 
+    public virtual DbSet<EmergencyContact> EmergencyContacts { get; set; } = null!;
     public virtual DbSet<Qrcode> Qrcodes { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder builder)
