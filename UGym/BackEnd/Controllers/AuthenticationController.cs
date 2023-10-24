@@ -53,6 +53,13 @@ namespace BackEnd.Controllers
                 SecurityStamp = Guid.NewGuid().ToString(),
                 UserName = registerUser.Username,
                 Name = registerUser.Name,
+                Cedula = registerUser.Cedula,
+                PhoneNumber = registerUser.PhoneNumber,
+                Birthday = registerUser.Birthday,
+                Gender = registerUser.Gender,
+                Ocupation = registerUser.Ocupation,
+                KnowGym = registerUser.KnowGym,
+
 
             };
             if (await _roleManager.RoleExistsAsync(role))

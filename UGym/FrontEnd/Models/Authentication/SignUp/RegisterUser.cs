@@ -27,7 +27,7 @@ namespace FrontEnd.Models.Authentication.SignUp
 
         [Display(Name = "Número Teléfonico")]
         [Required(ErrorMessage = "El número teléfonico es obligatorio")]
-        public string? PhoneNumer { get; set; }
+        public string? PhoneNumber { get; set; }
 
         [Display(Name = "Nombre Completo (Incluir ambos apellidos)")]
         [Required(ErrorMessage = "El nombre es requerido")]
