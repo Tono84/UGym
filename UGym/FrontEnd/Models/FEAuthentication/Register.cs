@@ -1,15 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
-namespace FrontEnd.Models.Authentication.SignUp
+namespace FrontEnd.Models.FEAuthentication
 {
-    public class RegisterUser
+    public class Register
     {
-        [Display (Name="Número de Socio")]
+        [Display(Name = "Número de Socio")]
         [Required(ErrorMessage = "El número de socio es requerido")]
         public string? Username { get; set; }
 
         [Display(Name = "Contraseña")]
         [Required(ErrorMessage = "Password is Required")]
+        [PasswordPropertyText]
         public string? Password { get; set; }
 
         [Display(Name = "Correo Electronico")]
