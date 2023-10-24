@@ -1,6 +1,6 @@
 ﻿namespace FrontEnd.Helpers
 {
-    public class Client
+    public class Authentication
     {
         public HttpClient Initial()
         {

@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using FrontEnd.Models.Authentication;
 using BackEnd.Models.Authentication.SignUp;
+using FrontEnd.Helpers;
+using System.Text.Json;
+using System.Text;
 
 namespace FrontEnd.Controllers
 {
@@ -12,16 +15,41 @@ namespace FrontEnd.Controllers
         {
             _logger = logger;
         }
+
+        Authentication api = new Authentication();
+
+
         public IActionResult Register()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult Register(RegisterUser registerUser)
+        public async Task<IActionResult> Register(RegisterUser registerUser)
         {
+            try
+            {
+                string data = JsonSerializer.Serialize(registerUser);
+                StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
 
-            return View();
+                HttpClient client = api.Initial();
+                HttpResponseMessage response = await client.PostAsJsonAsync("api/Authentication", content);
+                if(response != null && response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Home", "Index");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Error in API Request");
+                    return View(registerUser);
+                }
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, "Error in API Request: " + ex.Message);
+                return View(registerUser);
+            }
+            
         }
     }
 }
