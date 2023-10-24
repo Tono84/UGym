@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BackEnd.Models.Authentication.SignUp
 {
@@ -10,6 +11,7 @@ namespace BackEnd.Models.Authentication.SignUp
 
         [Display(Name = "Contraseña")]
         [Required(ErrorMessage = "Password is Required")]
+        [PasswordPropertyText]
         public string? Password { get; set; }
 
         [Display(Name = "Correo Electronico")]
