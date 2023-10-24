@@ -109,7 +109,7 @@ img.img-polaroid {
 	max-width:100%;
 }
 .navbar-default .navbar-toggle {
-    border-color: #ddd;
+    border-color: #ddd0;
     margin-top: 10px;
 }
 /*  Header
@@ -908,7 +908,7 @@ padding: 0 10px;
 overflow: hidden;
 }
 .info-blocks .info-blocks-in h3 {color: #fff;font-size: 20px;line-height: 28px;margin:0px;margin-bottom: 8px;/* font-weight: bold; */}
-.info-blocks .info-blocks-in p {font-size: 14px;}
+.info-blocks .info-blocks-in p {font-size: 85%;}
   
 blockquote {
 	font-size:16px;
@@ -978,12 +978,14 @@ ul.link-list li{
 	padding:2px 0 2px 0;
 	list-style:none;
 }
-footer{background: #000000;}
+footer {
+	background: #205a66;
+}
 footer ul.link-list li a{
-	color: #8C8C8C;
+	color: #c1c1c1;
 }
 footer ul.link-list li a:hover {
-	color: #205A66;
+	color: #000000;
 }
 /* --- Heading style --- */
 
@@ -1408,14 +1410,14 @@ ul.social-network li {
 	vertical-align: baseline;
 }
 
-#sub-footer{
-	text-shadow:none;
+#sub-footer {
+	text-shadow: none;
 	color: #dedede;
-	padding:0;
-	padding-top:30px;
-	margin:20px 0 0 0;
-	background: #000000;
-	border-top: 1px solid #3e3e3e;
+	padding: 0;
+	padding-top: 30px;
+	margin: 20px 0 0 0;
+	background: #6d6e72;
+	border-top: 1px solid #6d6e72;
 }
 
 #sub-footer p{
