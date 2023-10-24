@@ -11,6 +11,7 @@ public class UGymUser : IdentityUser
 {
     public string? Gender { get; set; } = null;
     public string? Cedula { get; set; } = null;
+    public string? Name { get; set; } = null;
     public DateTime? Birthday { get; set; } = null;
     public string? Ocupation { get; set; } = null;
     public string? KnowGym { get; set; } = null;
