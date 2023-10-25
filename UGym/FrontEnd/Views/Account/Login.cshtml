@@ -4,13 +4,50 @@
     ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<head>
+    <meta charset="utf-8">
+    <title>Página de Acceso</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="~/css/style.css" rel="stylesheet">
 
+<style>
+    /* Estilos personalizados */
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .pagina-login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
+    .caja-login {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+        padding: 20px;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
 <h1>Login</h1>
 
 <h4>UserViewModel</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="container">
+    <div class="pagina-login">
+        <div class="caja-login">
         <form asp-action="Login">
             @Html.HiddenFor(Model=>Model.ReturnUrl)
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -26,13 +63,15 @@
             </div>
             @ViewBag.Message
             <div class="form-group">
-                <input type="submit" value="Login" class="btn btn-primary" />
+                <input type="submit" value="Acceder" class="btn btn-primary" />
             </div>
+                <p class="mensaje">
+                    ¿No tienes una cuenta?
+                    @Html.ActionLink("Crea tu Cuenta", "Register", "FEAuthentication", new { area = "" }, new { @class = "waves-effect waves-dark" })
+                </p>
         </form>
-    </div>
+        </div>
+        </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 

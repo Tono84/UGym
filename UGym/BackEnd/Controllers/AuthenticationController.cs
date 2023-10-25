@@ -71,7 +71,7 @@ namespace BackEnd.Controllers
                 }
 
                 #region Assign a Role to User
-                await _userManager.AddToRoleAsync(user, role);
+                await _userManager.AddToRoleAsync(user, "Socio");
                 #endregion
 
                 #region Add Token to Verify Email

@@ -12,6 +12,7 @@ namespace FrontEnd.Models.FEAuthentication
         [Display(Name = "Contraseña")]
         [Required(ErrorMessage = "Password is Required")]
         [PasswordPropertyText]
+        [DataType(DataType.Password)]
         public string? Password { get; set; }
 
         [Display(Name = "Correo Electronico")]
