@@ -59,9 +59,8 @@ namespace BackEnd.Controllers
                 Gender = registerUser.Gender,
                 Ocupation = registerUser.Ocupation,
                 KnowGym = registerUser.KnowGym,
-
-
             };
+
             if (await _roleManager.RoleExistsAsync(role))
             {
                 var result = await _userManager.CreateAsync(user, registerUser.Password);
@@ -158,6 +157,24 @@ namespace BackEnd.Controllers
                 signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
                 );
             return token;
+        }
+
+        [HttpPost]
+        [Route("GetUser")]
+        public async Task<IActionResult> GetUser([FromBody] LoginModel model)
+        {
+            var user = await _userManager.FindByNameAsync(model.Username);
+            if (user != null)
+            {
+                var userRoles = await _userManager.GetRolesAsync(user);
+
+
+                model.Roles = userRoles.ToList();
+
+
+                return Ok(model);
+            }
+            return Unauthorized();
         }
     }
 }
