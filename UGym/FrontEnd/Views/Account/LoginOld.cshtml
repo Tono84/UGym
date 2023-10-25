@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>Login</h2>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Página de Inicio de Sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    @* <link href="~/css/style.css" rel="stylesheet"> *@
+</head>
+<body>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="pagina-login">
+            <div class="caja-login">
+                <form class="formulario-login" style="margin: 0;" method="post" action="@Url.Action("Login", "Account")">
+                    <input type="text" name="username" id="username" placeholder="número de socio" style="margin-bottom: 10px;">
+                    <input type="password" name="password" placeholder="contraseña" style="margin-bottom: 10px;">
+                    <button type="submit" style="margin-bottom: 10px;">Ingresar</button>
+                    <p class="mensaje">
+                        ¿No tienes una cuenta?
+                        @Html.ActionLink("Crea tu Cuenta", "Register", "FEAuthentication", new { area = "" }, new { @class = "waves-effect waves-dark" })
+                    </p>
+                </form>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+@*         <script>
+        $(document).ready(function () {
+        $('.formulario-login').submit(function (e) {
+        e.preventDefault();
+
+        });
+        $('.mensaje a').click(function () {
+        $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+        });
+        </script> *@
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+</html>
