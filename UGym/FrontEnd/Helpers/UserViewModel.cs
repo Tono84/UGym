@@ -4,9 +4,11 @@ namespace FrontEnd.Models
 {
     public class UserViewModel
     {
+        [Display(Name = "Número de Socio")]
         public string UserName { get; set; }
         public string? Email { get; set; }
 
+        [Display(Name ="Contraseña")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
         
