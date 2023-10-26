@@ -34,6 +34,44 @@ namespace BackEnd.Controllers
         }
 
         [HttpPost]
+        [Route("RegisterSinRoles")]
+        public async Task<IActionResult> RegisterSinRoles([FromBody] RegisterUser registerUser)
+        {
+            var userExists = await _userManager.FindByNameAsync(registerUser.Username);
+            if (userExists != null)
+                return StatusCode(StatusCodes.Status500InternalServerError, new Response { Status = "Error", Message = "User already exists!" });
+
+            UGymUser user = new ()
+            {
+                Email = registerUser.Email,
+                SecurityStamp = Guid.NewGuid().ToString(),
+                UserName = registerUser.Username,
+                Name = registerUser.Name,
+                Cedula = registerUser.Cedula,
+                PhoneNumber = registerUser.PhoneNumber,
+                Birthday = registerUser.Birthday,
+                Gender = registerUser.Gender,
+                Ocupation = registerUser.Ocupation,
+                KnowGym = registerUser.KnowGym,
+            };
+
+            var result = await _userManager.CreateAsync(user, registerUser.Password);
+            if (!result.Succeeded)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    new Response { Status = "Error", Message = "User creation failed! Please check user details and try again." });
+            }
+            await _userManager.AddToRoleAsync(user, "Socio");
+
+            var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var confirmationLink = Url.Action(nameof(ConfirmEmail), "Authentication", new { token, email = user.Email }, Request.Scheme);
+            var message = new Message(new string[] { user.Email! }, "Confirmation email link", confirmationLink!);
+            _emailService.SendEmail(message);
+
+            return Ok(new Response { Status = "Success", Message = "User created successfully!" });
+        }
+
+        [HttpPost]
         [Route("Register")]
         public async Task<IActionResult> Register([FromBody] RegisterUser registerUser, string role)
         {

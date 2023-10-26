@@ -1,106 +1,75 @@
-﻿@{
-    ViewBag.Title = "Registro";
+﻿@model FrontEnd.Models.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Registro</h2>
+<h1>Register</h1>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="utf-8">
-    <title>Página de Registro</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="~/css/style.css" rel="stylesheet">
-    <style>
-        /* Estilos personalizados */
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
-
-        .pagina-registro {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-
-        .caja-registro {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .footer {
-            background-color: #f9f9f9;
-            padding: 20px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <br />
-    <div class="container">
-        <div class="pagina-registro">
-        <div class="caja-registro">
-            <form class="formulario-registro">
-                <input type="number" placeholder="#Socio" />
-                <input type="text" placeholder="Nombre Completo (incluyendo dos apellidos)" />
-                <select>
-                    <option value="" disabled selected>Seleccione su género</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                </select>
-                <input type="text" placeholder="Cédula" />
-                <input type="date" placeholder="Fecha de Nacimiento" />
-                <textarea placeholder="¿A qué se dedica? ¿Ofrece algún producto o servicio en que le podamos ayudar a vender? (Incluso si está en busca de trabajo, es importante que nos diga en qué es bueno)"></textarea>
-                <select>
-                    <option value="" disabled selected>¿Cómo supo de nosotros?</option>
-                    <option value="Cercanía/Ubicación">Cercanía y/o ubicación</option>
-                    <option value="Recomendación">Recomendación</option>
-                    <option value="Publicidad-Redes Sociales">Publicidad-Redes Sociales</option>
-                    <option value="Otro">Otro</option>
-                </select>
-                <textarea placeholder="¿Qué le hizo tomar la decisión de inscribirse?"></textarea>
-                <input type="email" placeholder="Correo Electrónico" />
-                <input type="text" placeholder="Dirección" />
-                <input type="tel" placeholder="Número de Teléfono" />
-                <input type="tel" placeholder="En caso de emergencia, llamar al siguiente número" />
-                <button>
-                    @Html.ActionLink("Completa tu Expediente Medico", "MedicalHistory", "Account", new { area = "" }, new { @class = "waves-effect waves-dark" })
-                </button>
-                <p class="mensaje">
-                    ¿Ya tiene una cuenta?
-                    @Html.ActionLink("Iniciar Sesión", "Login", "Account", new { area = "" }, new { @class = "waves-effect waves-dark" })
-                </p>
-            </form>
-        </div>
+<h4>RegisterViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Register">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cedula" class="control-label"></label>
+                <input asp-for="Cedula" class="form-control" />
+                <span asp-validation-for="Cedula" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Birthday" class="control-label"></label>
+                <input asp-for="Birthday" class="form-control" />
+                <span asp-validation-for="Birthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label"></label>
+                <input asp-for="Gender" class="form-control" />
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ocupation" class="control-label"></label>
+                <input asp-for="Ocupation" class="form-control" />
+                <span asp-validation-for="Ocupation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KnowGym" class="control-label"></label>
+                <input asp-for="KnowGym" class="form-control" />
+                <span asp-validation-for="KnowGym" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Registrar" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <!-- Contenido del footer -->
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script>
-        $(document).ready(function () {
-            $('select').formSelect();
-            $('.formulario-registro').submit(function (e) {
-                e.preventDefault();
-                // Agrega tu lógica de registro aquí
-            });
-            $('.mensaje a').click(function () {
-                $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
-            });
-        });
-    </script>
-</body>
-</html>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

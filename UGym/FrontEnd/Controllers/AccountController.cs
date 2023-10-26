@@ -16,6 +16,30 @@ namespace FrontEnd.Controllers
 
         }
 
+        // GET: CategoryController/Create
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        // POST: CategoryController/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Register(RegisterViewModel user)
+        {
+            SecurityHelper seguridadHelper;
+            try
+            {
+                seguridadHelper = new SecurityHelper();
+                user = seguridadHelper.RegisterSinRoles(user);
+                return LocalRedirect("/Account/Login");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
         public IActionResult Login(string ReturnUrl = "/")
         {
             UserViewModel objLoginModel = new UserViewModel();
